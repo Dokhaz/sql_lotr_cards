@@ -115,3 +115,30 @@ CREATE TABLE terrain
     card VARCHAR(50),
     PRIMARY KEY (id)
 );
+
+CREATE TABLE title
+(
+	id INT NOT NULL AUTO_INCREMENT,
+    type VARCHAR(20),
+    name_eng VARCHAR(50) NOT NULL,
+    trait1 VARCHAR(20),
+    trait2 VARCHAR(20),
+    descrip VARCHAR(500) NOT NULL,
+    deck_eng VARCHAR(50),
+    card VARCHAR(50),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE weakness
+(
+	id INT NOT NULL AUTO_INCREMENT,
+    type VARCHAR(20),
+    name_eng VARCHAR(50) NOT NULL,
+    trait1 VARCHAR(20),
+    trait2 VARCHAR(20),
+    description VARCHAR(500) NOT NULL,
+    deck_eng VARCHAR(50),
+    card VARCHAR(50),
+    PRIMARY KEY (id)
+);
+
