@@ -142,3 +142,35 @@ CREATE TABLE weakness
     PRIMARY KEY (id)
 );
 
+ALTER TABLE bane
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE basic
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE boon
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE damage
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE fear
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE hero
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE item
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE mount
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE role
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE terrain
+RENAME COLUMN descrip TO description;
+
+ALTER TABLE title
+RENAME COLUMN descrip TO description;
