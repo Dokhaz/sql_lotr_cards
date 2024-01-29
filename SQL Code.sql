@@ -1368,4 +1368,582 @@ VALUES
 -- end Took deck
 -- end table hero
 
--- values table item
+-- values table item, item
+INSERT INTO item (type, name_eng, trait1, trait2, description, deck_eng, tier)
+VALUES
+(
+	'item',
+	'Hammer and Tongs',
+    null,
+	null,	
+    'When you attack or test to negate Damage or Fear, you may deplete this trinket to convert 1 Fate to 1 Success.',
+	'smith',
+    0
+),
+(
+	'item',
+    'The Crown of Shadows',	
+    null,	
+    null,	
+    'You may equip 1 additional Iteam. When you test, you may deplete this trinket to add Success equal to your corruption.',	
+    'quest',
+    0
+);
+
+INSERT INTO item (type, name_eng, trait1, trait2, description, deck_eng, tier)
+VALUES
+(
+	'item',
+	'Brooch',	
+    null,	
+    null,	
+    'If you would suffer any amount of Fear, you may deplete this item to suffer that Fear facedown instead.',
+    'brooch',	
+    1
+),
+(
+	'item',	
+    'Eriador Brooch',	
+    null,	
+    null,	
+    'If you would suffer any amount of Fear, you may deplete this item to suffer that Fear facedown instead and prevent 1 of that Fear.',	
+    'brooch',	
+    2
+),
+(
+	'item',
+	'Mark of Arnor',
+	null,	
+    null,	
+    'If you would suffer any amount of Fear, you may deplete this item to suffer that Fear facedown instead and prevent 1 of that Fear. During your turn, you may deplete this item to flip 1 Damage or Fear facedown.',	
+    'brooch',	
+    3
+);
+
+-- without traits
+INSERT INTO item (type, name_eng, description, deck_eng, tier)
+VALUES
+(
+	'item',
+	'Waterskin',
+    'When you travel, you may deplete this item to move 1 additional space.',	
+    'waterskin',	
+    1
+),
+(
+	'item',
+	'Elven Waterskin',
+    'When you travel, you may deplete this item to move 1 additional space.',	
+    'waterskin',
+    2
+),
+(
+	'item',	
+    'Clear-Water',
+    'Increase your Fear limit by 1. When you travel, you may deplete this item to move 1 additional space.',	
+    'waterskin',	
+    3
+),
+(
+	'item',	
+    'Boots',
+    'If you would test Agility or Might, you may deplete this item to test Might or Agility instead.',	
+    'shoes',	
+    1
+),
+(
+	'item',	
+    'Greenway Boots',
+    'If you would test Agility or Might, you may deplete this item to test Might or Agility instead. Before you move out of a space, you may deplete this item to not provoke attacks.',	
+    'shoes',	
+    2
+),
+(
+	'item',	
+    'Dusk Treaders',
+    'If you would test Agility or Might, you may deplete this item to test Might or Agility instead. Before you move out of a space or interact with a token, you may deplete this item to not provoke attacks.',	
+    'shoes',	
+    3
+),
+(
+	'item',	
+    'Handkerchief',
+    'After you interact with a person token, you may deplete this item to gain 1 inspiration and perform 1 additional action.',
+	'tissue',	
+    1
+),
+(
+	'item',
+	'Heirloom Handkerchief',
+    'After you interact with a person token, you may deplete this item to gain 1 inspiration, become determined and perform 1 additional action.',	
+    'tissue',	
+    2
+),
+(
+	'item',	
+    'Forget-Me-Never',
+    'While there are no nearby heroes, increase your Spirit by 1. After you interact with a person token, you may deplete this item to gain 1 inspiration, become determined, and perform 1 additional action.',	
+    'tissue',	
+    3
+);
+
+-- with traits
+INSERT INTO item (type, name_eng, trait1, trait2, description, deck_eng, tier)
+VALUES
+(
+	'item',	
+    'Extra Rations',	
+    'food',
+    null,	
+    'At the start of the rally phase, you may deplete this item for a hero in your space to discard 1 Damage.',	
+    'ex_rations',	
+    1
+),
+(
+	'item',	
+    'Extra Rations',	
+    'food',	
+    null,	
+    'At the start of the rally phase, you may deplete this item for a hero in your space to discard 1 Damage.',	
+    'ex_rations',	
+    1
+),
+(
+	'item',	
+    'Breeland Rations',	
+    'food',	
+    null,	
+    'At the start of the rally phase, you may deplete this item for a hero in your space to discard 2 Damage.',	
+    'ex_rations',	
+    2
+),
+(
+	'item',
+	'Hobbit Rations',	
+    'food',	
+    null,	
+    'At the start of the rally phase, you may deplete this item for a hero in your space to discard 1 Damage.',	
+    'ex_rations',	
+    2
+),
+(
+	'item',	
+    'Butterbur Biscuts',	
+    'food',	
+    null,	
+    'At the start of the rally phase, you may deplete this item for a hero in your space to become determined and to discard up to 2 Damage and Fear.',	
+    'ex_rations',	
+    3
+),
+(
+	'item',	
+    'Tookish Apple Cakes',	
+    'food',	
+    null,	
+    'At the start of the rally phase, you may deplete this item for heroes in your space to collectively discard up  2 Damage and Fear.',	
+    'ex_rations',	
+    3
+);
+
+-- without traits
+INSERT INTO item (type, name_eng, description, deck_eng, tier)
+VALUES
+(
+	'item',	
+    'Helm',
+    'If you would suffer any amount of Damage, you may deplete this item to suffer that Damage facedown instead.',
+    'helm',	
+    1
+),
+(
+	'item',	
+    'Dwarf-Forged helm',
+    'If you would suffer any amount of Damage, you may deplete this item to suffer that Damage facedown instead.',	
+    'helm',	
+    2
+),
+(
+	'item',	
+    'Fire-Scale',
+    'Increase your Damage limit by 1. If you would suffer any amount of Damage, you may deplete this item to suffer that Damage facedown instead.',	
+    'helm',	
+    3
+),
+(
+	'item',	
+    'Book',
+    'When you Scout, you may deplete this item to reveal 2 additional cards.',	
+    'book',	
+    1
+),
+(
+	'item',	
+    'Book of Battles',
+    'When you Scout, you may deplete this item to reveal 2 additional cards. If you do and there is an enemy in your space, gain 1 inspiration.',
+	'book',	
+    2
+),
+(
+	'item',	
+    'Legendarium of Thror',
+    'When you Scout, you may deplete this item to reveal 2 additional cards and prepare 1 additional card. If you do and there is an enemy in your space gain 1 inspiration.',	
+    'book',	
+    3
+),
+(
+	'item',	
+    'Rope',	
+    'When you interact with a token and test Might or Agility, you may deplete this item to convert 1 Fate to 1 Success.',	
+    'rope',	
+    1
+),
+(
+	'item',	
+    'Hobson rope',
+    'When you interact with a token, if you would test Might, you may test Agility instead. When you interact with a token and test Might or Agility, you may deplete this item to convert 1 Fate to 1 Success.',	
+    'rope',	
+    2
+),
+(
+	'item',
+	'Ninnyhammer Braid',
+    'When you interact with a token, if you would test Might, you may test Agility instead. When you interact with a token and test Might or Agility, you may deplete this item to convert 1 Fate to 2 Success.',	
+    'rope',	
+    3
+),
+(
+	'item',	
+    'Torch',
+    'You and other heroes in your space ignore darkness.',	
+    'torch'	,
+    1
+),
+(
+	'item',	
+    'Weathertop Torch',
+    'You and other heroes in your space ignore darkness. If you attack an enemy in your space, you may deplete this item to add pierce or smite.',	
+    'torch',	
+    2
+),
+(
+	'item',	
+    'Under-Sun',	
+    'You and other heroes in your space ignore darkness. If you attack an enemy in your space, you may deplete this item to add pierce, smite and stun.',	
+    'torch',	
+    3
+),
+(
+	'item',
+	'Old pipe',
+    'When you Scout during rally phase, if there are no nearby enemies, you may deplete this item to prepare 1 additional card.',	
+    'pipe',	
+    1
+),
+(
+	'item',	
+    'Long-Stemmed Pipe',
+    'When you Scout during rally phase, if there are no nearby enemies, you may deplete this item to prepare 1 additional card and discard 2 facedown Fear.',	
+    'pipe',	
+    2
+),
+(
+	'item',	
+    'Storm-Maker',
+    'When you Scout during rally phase, if there are no nearby enemies, you may deplete this item to prepare 1 additional card and discard 2 facedown Fear and gain a boon of your choice.',	
+    'pipe',	
+    3
+),
+(
+	'item',	
+    'Old map',
+    'After you explore a tile, you may deplete this item to choose another hero to gain 1 inspiration.',	
+    'map',	
+    1
+),
+(
+	'item',	
+    'Bounders Map',
+    'After you explore a tile or defeat an enemy group, you may deplete this item to choose another hero to gain 1 inspiration.',	
+    'map',	
+    2
+),
+(
+	'item',	
+    'Bullroarers Course',
+    'After you explore a tile or defeat an enemy group, you may deplete this item to choose another hero to gain 1 inspiration. When you attack, you may deplete this item to add lethal.',	
+    'map',	
+    3
+);
+
+-- with traits
+INSERT INTO item (type, name_eng, trait1, trait2, description, deck_eng, tier)
+VALUES
+(
+	'item',	
+    'Provisions',	
+    'food',	
+    null,
+	'At the end of your turn, you may deplete this item to Scout 1. For each Creature card in your play area, reveal 1 additional card.',	
+    'provision',	
+    1
+),
+(
+	'item',	
+    'Wayfarers Provisions',	
+    'food',	
+    null,	
+    'During your turn, you may deplete this item to Scout 1. For each Creature card in your play area, reveal 1 additional card.',	
+    'provision',	
+    2
+),
+(
+	'item',	
+    'Horselord Supply',	
+    'food',	
+    null,	
+    'During your turn, you may deplete this item to Scout 1. For each Creature card in your play area, reveal 1 additional card.',	
+    'provision',	
+    3
+);
+
+-- values table item, armor
+INSERT INTO item (type, name_eng, description, deck_eng, tier)
+VALUES
+(
+	'armor',	
+    'Hoary Coat',
+    'Suffer all Damage facedown. After you suffer any amount of Damage or Fear, you may prepare one skill from your discard pile.',	
+    'beorn',
+	0
+),
+(
+	'armor',	
+    'Cloak',
+    'Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 1 of that Damage or Fear.',	
+    'cloak',	
+    1
+),
+(
+	'armor',	
+    'Ranger Cloak',
+    'Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 1 of that Damage or Fear. Before you suffer facedown Damage or Fear, you may prevent 1 of that Damage or Fear.',	
+    'cloak',	
+    2
+),
+(
+	'armor',	
+    'Fangorn Cloak',
+    '1 Success: 2 hits. Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 1 of that Damage or Fear.',	
+    'cloak',	
+    2
+),
+(
+	'armor',	
+    'Tuckborough Cloak',
+    'Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 1 of that Damage or Fear. After setup, become hidden.',	
+    'cloak',	
+    2
+),
+(
+	'armor',	
+    'Splendor-Well',
+    'Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 1 of that Damage or Fear. Before you suffer facedown Damage or Fear, you may prevent 1 of that Damage or Fear. After setup, gain 3 inspiration.',	
+    'cloak',	
+    3
+),
+(
+	'armor',	
+    'Slip-Thorn',
+    '1 Success: 2 hits, pierce. Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 2 of that Damage and Fear.',	
+    'cloak',	
+    3
+),
+(
+	'armor',	
+    'Wind-Walker',
+    'Before you perform a travel action, you may move 1 space. Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 1 of that Damage or Fear. After setup, become hidden.',	
+    'cloak',	
+    3
+),
+(
+	'armor',	
+    'Storm-Shroud',
+    '1 Success: 3 hits, pierce. Before you suffer Damage or Fear, you may spend 1 inspiration to prevent 2 of that Damage and Fear. After setup, gain 1 boon of your choice or 2 inspiration.',
+    'cloak',	
+    4
+),
+(
+	'armor',	
+    'Travel Garb',
+    'Increase your Fear limit by 1. Before you suffer facedown Damage, you may prevent 1 of that Damage.',
+    'garb',	
+    1
+),
+(
+	'armor',	
+    'Greenwood Garb',	
+    'Increase your Fear limit by 1. Before you suffer facedown Damage, you may prevent 1 of that Damage. After you explore a tile, you may spend 1 inspiration to Scout 2.',	
+    'garb',	
+    2
+),
+(
+	'armor',	
+    'Westmarch Garb',
+    'Increase your Damage and Fear limit by 1. Before you suffer facedown Damage, you may prevent 1 of that Damage.',	
+    'garb',	
+    2
+),
+(
+	'armor',	
+    'Wanderers Wish',
+    'Increase your Fear limit by 1. Before you suffer facedown Damage, you may prevent 2 of that Damage. After you explore a tile, you may spend 1 inspiration to Scout 4.',	
+    'garb',	
+    3
+),
+(
+	'armor',	
+    'Ever-Bloom',
+    'Increase your Damage and Fear limits by 1. Before you suffer facedown Damage, you may prevent 1 of that Damage. When Damage or Fear instruct you to doscard inspiration or prepared cards, ignore those effects.',	
+    'garb',	
+    3
+),
+(
+	'armor',	
+    'Endless Road',
+    'Increase your Fear limit by 2. Before you suffer facedown Damage, you may prevent 2 of that Damage. Once per round, during your turn, you may reveal the top 4 cards of any deck and place them back in any order.',	
+    'garb',	
+    4
+),
+(
+	'armor',	
+    'Ring Mail',
+    'Decrease your Agility by 1. If you would test Wisdom, Spirit or Wit to negate, you may test Might instead.',	
+    'mail',	
+    1
+),
+(
+	'armor',	
+    'Twice-Wrought Ring Mail',
+    'When you suffer Damage, after resolving all Damage from single source, gain 1 inspiration. If you would test Wisdom, Spirit or Wit to negate, you may test Might instead.',	
+    'mail',	
+    2
+),
+(
+	'armor',	
+    'Evendim Ring Mail',
+    'Decrease your Agility by 1. Increase your Fear limit by 1. If you would test Wisdom, Spirit or Wit to negate, you may test Might instead.',	
+    'mail',	
+    2
+),
+(
+	'armor',	
+    'Wraths-End',
+    'Decrease your Agility by 1. Increase your Spirit by 1. Increase your Damage and Fear limit by 1. If you would test Wisdom, Spirit or Wit to negate, you may test Might instead.',	
+    'mail',	
+    3
+),
+(
+	'armor',	
+    'Blade-Bane',
+    'Decrease your Agility by 1. Increace your Damage and Fear limits by 1. If you would test Wisdom, Spirit, or Wit to negate, you may test Might instead. Suffer all Damage facedown.',
+	'mail',	
+    3
+),
+(
+	'armor',	
+    'Second Skin',
+    'Incease your Agility by 1. Increase your Fear limit by 1. If you would test Wisdom, Spirit or Wit to negate, you may test Might instead.',	
+    'mail',	
+    3
+),
+(
+	'armor',	
+    'Dragon Scale',
+    'Increase your Damage, Fear and inspiration limits by 1. When you test to negete, you may test Might of Spirit instead. Suffer all Damage facedown.',	
+    'mail',	
+    4
+),
+(
+	'armor',	
+    'Padded Armor',
+    'When you test to negate Damage or Fear, you may spend 1 inspiration to convert 2 Fate to 2 Success.',
+	'gambeson',	
+    1
+),
+(
+	'armor',	
+    'Guards Tabard',
+    'When you test to negate Damage or Fear, you may spend 1 inspiration to convert 2 Fate to 2 Success. After you suffer any amount of Damage or Fear, you may flip 1 Damage or Fear facedown.',	
+    'gambeson',	
+    2
+),
+(
+	'armor',	
+    'Vanguard Armor',
+    'When you test to negate Damage or Fear, you may spend 1 inspiration to convert 2 Fate to 3 Success.',	
+    'gambeson',	
+    2
+),
+(
+	'armor',	
+    'Ever-Vigilant',
+    'When you test to negate Damage or Fear, you may spend 1 inspiration to convert 2 Fate to 2 Success. After you suffer any amount of Damage or Fear, you may flip up to 2 Damage or Fear facedown.',	
+    'gambeson',	
+    3
+),
+(
+	'armor',	
+    'Glory-Mantle',
+    'You can have up to 1 additional prepared skill. When you test to negare Damage or Fear, you may spend 1 inspiration to convert 2 Fate to 3 Success.',	
+    'gambeson',	
+    3
+),
+(
+	'armor',	
+    'Heart-Swell',
+    'Increase your inspiration limit by 1. When you test to negate Damage or Fear, you may convert 2 Fate to 2 Success.',	
+    'gambeson',	
+    3
+),
+(
+	'armor',	
+    'Star of the West',
+    'Increase your inspiration limit by 1. When you test to negate Damage or Fear, you may convert 1 Fate to 2 Success. Suffer all Fear facedown.',
+	'gambeson',	
+    4
+),
+(
+	'armor',	
+    'Plate Armor',
+    'Decrease your Agility by 1. When you test to negate Damage, add 1 Success.',	
+    'plate',	
+    1
+),
+(
+	'armor',	
+    'Iron Hills Plate',
+    'Decrease your Agility by 1. When you test to negate, add 1 Success.',
+    'plate',	
+    2
+),
+(
+	'armor',
+	'Defender of the Citadel',
+    'Decrease your Agility by 1. Increase your Might and Spirit by 1. When you test to negate, add 1 Success.',
+	'plate',	
+    3
+),
+(
+	'armor',	
+    'Iron-Soul',
+    'Decrease your Agility by 1. When a hero in your spce tests to negate, add 1 Success. Before you perform a last stand, flip all of your Damage and Fear facedown.',	
+    'plate',	
+    3
+),
+(
+	'armor',
+	'Kings Crest',
+    'When a hero in your space tests to negate, add 1 Success. Once per phase, when a hero in your space tests, that hero may discard 1 card from the test to reveal 2 additional cards.',
+	'plate',	
+    4
+);
