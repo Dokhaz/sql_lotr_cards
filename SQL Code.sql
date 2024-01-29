@@ -667,7 +667,7 @@ VALUES
 );
 -- end Balin deck
 
--- values Beorn deck
+-- values for Beorn deck
 INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
 VALUES
 (
@@ -717,7 +717,7 @@ VALUES
 );
 -- end Beorn deck
 
--- values Beravor deck
+-- values for Beravor deck
 INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
 VALUES
 (
@@ -767,7 +767,7 @@ VALUES
 );
 -- end Beravor deck
 
--- values Bilbo deck
+-- values for Bilbo deck
 INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
 VALUES
 (
@@ -817,7 +817,7 @@ VALUES
 );
 -- end Bilbo deck
 
--- values Boromir deck
+-- values for Boromir deck
 INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
 VALUES
 (
@@ -867,7 +867,7 @@ VALUES
 );
 -- end Boromir deck
 
--- values Dis deck
+-- values for Dis deck
 INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
 VALUES
 (
@@ -917,7 +917,7 @@ VALUES
 );
 -- end Dis deck
 
--- values Eleanora deck
+-- values for Eleanora deck
 INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
 VALUES
 (
@@ -965,3 +965,407 @@ VALUES
 	'Eleanora',
 	'Eleanora 5'
 );
+-- end Eleanora deck
+
+-- values for Elena deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Child of the Lhun',
+	'tactic',
+    null,
+    'When an enemy moves into your space, you may discard this skill to apply 4 hits and stun to that enemy. Hide (After you test, discard to become hidden).',
+	'Elena',
+	'Elena 1'
+),
+(
+	'hero',
+	'Elven Light',
+	'knowledge',
+	'innate',
+	'Before you test Wisdom or Spirit, you may look at the top card of your deck and place it on the top or bottom of your deck.',
+	'Elena',
+	'Elena 2'
+),
+(
+	'hero',
+	'Immortality',
+	'innate',
+    null,
+    'Rest 2 (Discard at the end of turn to discard 2 facedown Damage or Fear). Strike 2 (When you attack, discard to add 2 hits.',
+	'Elena',
+	'Elena 3'
+),
+(
+	'hero',
+	'Lay of Twilight',
+	'knowledge',
+	'song',
+	'During your turn, you may discard this skill for you and nearby heroes to collectively discard up to 4 facedown Damage and Fear.',
+	'Elena',
+	'Elena 4'
+),
+(
+	'hero',
+	'Lay of Twilight',
+	'knowledge',
+	'song',
+	'During your turn, you may discard this skill for you and nearby heroes to collectively discard up to 4 facedown Damage and Fear.',
+	'Elena',
+	'Elena 5'
+);
+-- end Elena deck
+
+-- values for Freahild deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Fateless',
+    'innate',
+    null,
+    'When you test, you may discard this skill to convert all Fate to Success.',
+	'Freahild',
+	'Freahild 1'
+),
+(
+	'hero',
+	'Faithful Companion',
+	'aid',
+    null,
+    'When a nearby hero tests, you may spend inspiration to convert Fate to Success. Guard 2 (Discard to prevent 2 Damage or Fear for a hero in your space).',
+	'Freahild',
+	'Freahild 2'
+),
+(
+	'hero',
+	'Gift of Men',
+    'innate',
+    'valour',
+    'During your turn, you may discard this skill to discard 1 Fear.',
+	'Freahild',
+	'Freahild 3'
+),
+(
+	'hero',
+	'Cavalry Combat',
+	'tactic',
+    null,
+    'After you test to negate, you may discard this skill to Scout 2 and move 1 space without provoking attacks.',
+	'Freahild',
+	'Freahild 4'
+),
+(
+	'hero',
+	'Cavalry Combat',
+	'tactic',
+    null,
+    'After you test to negate, you may discard this skill to Scout 2 and move 1 space without provoking attacks.',
+	'Freahild',
+	'Freahild 5'
+);
+-- end Freahil deck
+
+-- values for Gandalf deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Grey Pilgrim',
+    null,
+    null,
+    'Once per round, when you Scout, you may reveal 1 additional card. Guard 2 (Discard to prevent 2 Damage or Fear for a hero in your space).',
+	'Gandalf',
+	'Gandalf 1'
+),
+(
+	'hero',
+	'Uncanny',
+	'shadow',
+    null,
+    'During your turn, you may discard this skill to search your deck for a weakness. Remove that skill from the adventure, then shuffle your deck.',
+	'Gandalf',
+	'Gandalf 2'
+),
+(
+	'hero',
+	'Flame Imperishable',
+    null,
+    null,
+    'When you prepare this skill, gain 1 inspiration. When you test, you may discard this skill to convert 1 Fate to 1 Success.',
+	'Gandalf',
+	'Gandalf 3'
+),
+(
+	'hero',
+	'Greater Power',
+	'knowledge',
+    null,
+    'Strike 2. Sprint 2. Guard 2. Rest 2. Hide.',
+	'Gandalf',
+	'Gandalf 4'
+),
+(
+	'hero',
+	'Dazzling Flash',
+	'tactic',
+    null,
+    'When you attack an enemy in your space, you may discard this skill to add smite and stun to the attack.',
+	'Gandalf',
+	'Gandalf 5'
+);
+-- end Gandalf deck
+
+-- values for Gimloi deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Poets Heart',
+    null,
+    null,
+    'Before you interact with a person token, gain 1 inspiration. Rest 2 (Discard at end of turn to discard 2 facedown Damage or Fear).',
+	'Gimli',
+	'Gimli 1'
+),
+(
+	'hero',
+	'Restless Axe',
+	'tactic',
+    null,
+    'At the start of your turn, you may discard this skill to attack and add 2 hits. Strike 2 (When you attac, discard to add 2 hits).',
+	'Gimli',
+	'Gimli 2'
+),
+(
+	'hero',
+	'Restless Axe',
+	'tactic',
+    null,
+    'At the start of your turn, you may discard this skill to attack and add 2 hits. Strike 2 (When you attac, discard to add 2 hits).',
+	'Gimli',
+	'Gimli 3'
+),
+(
+	'hero',
+	'Kinship',
+	'aid',
+    null,
+    'Before a nearby hero tests, you may discard this skill for that gero to reveal 2 additional cards; if they are a Dwarf, you may Scout 1.',
+	'Gimli',
+	'Gimli 4'
+),
+(
+	'hero',
+	'Fury',
+    null,
+    null,
+    'When you attack, you may spend any amount of Fate to add an equal number of hits.',
+	'Gimli',
+	'Gimli 5'
+);
+-- end Gimli deck
+
+-- values for Legolas deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Keen Eyes',
+	'innate',
+    null,
+    'Your Range attacks can target enemies 1 additional space away. Strike 2 (When you attack, discard to add 2 hits).',
+	'Legolas',
+	'Legolas 1'
+),
+(
+	'hero',
+	'Light-Footed',
+    null,
+    null,
+    'When you interact with a search or threat token, before you test, you may discard this skill to dest Agility instead and Scout 1. Sprint 1 (During your turn, discard to move 1 space).',
+	'Legolas',
+	'Legolas 2'
+),
+(
+	'hero',
+	'Light-Footed',
+    null,
+    null,
+    'When you interact with a search or threat token, before you test, you may discard this skill to dest Agility instead and Scout 1. Sprint 1 (During your turn, discard to move 1 space).',
+	'Legolas',
+	'Legolas 3'
+),
+(
+	'hero',
+	'Tireless',
+    null,
+    null,
+    'At the end of your turn, you may discard this skill to perform an action that you have not performed this turn.',
+	'Legolas',
+	'Legolas 4'
+),
+(
+	'hero',
+	'Immortality',
+	'innate',
+    null,
+    'Rest 2 (Riscard at the end of turn to discard 2 facedown Damage or Fear). Strike 2 (When you attack, discard to add 2 hits.',
+	'Legolas',
+	'Legolas 5'
+);
+-- end Legolas deck
+
+-- values for Dwalin deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Kinship',
+	'aid',
+    null,
+    'Before a nearby hero tests, you may discard this skill for that hero to reveal 2 additional cards; if they are a Dwarf, you may Scout 1.',
+	'Dwalin',
+	'Dwalin 1'
+),
+(
+	'hero',
+	'Ancestral Grudge',
+	'innate',
+	'tactic',
+	'When you attack an Orc or Goblin, you may add 2 hits and lethal. Strike 3 (When you attack, discard to add 3 hits).',
+	'Dwalin',
+	'Dwalin 2'
+),
+(
+	'hero',
+	'Ancestral Grudge',
+	'innate',
+	'tactic',
+	'When you attack an Orc or Goblin, you may add 2 hits and lethal. Strike 3 (When you attack, discard to add 3 hits).',
+	'Dwalin',
+	'Dwalin 3'
+),
+(
+	'hero',
+	'Misty Mountains Cold',
+	'song',
+    null,
+    'When you Scout, you may reveal 1 fewer card to gain 1 inspiration.',
+	'Dwalin',
+	'Dwalin 4'
+),
+(
+	'hero',
+	'Stirring Performance',
+	'song',
+    null,
+    'Before you test Spirit or Wit, you may discard this skill to reveal 1 additional card and gain 1 inspiration. Rest 2 (Discard at the end of turn to discard 2 facedown Damage or Fear).',
+	'Dwalin',
+	'Dwalin 5'
+);
+-- end Dwalin deck
+
+-- values for Renerien
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Child of the Lhun',
+	'tactic',
+    null,
+    'When an enemy moves into your space, you may discard this skill to apply 4 hits and stun to that enemy. Hide (After you test, discard to become hidden).',
+	'Renerien',
+	'Renerien 1'
+),
+(
+	'hero',
+	'Mischief',
+	'shadow',
+    null,
+    'During your turn, you may choose a hero to select 3 cards from their discard pile. They prepare 1 revealed card and place the rest on top of their deck. Then discard this skill.',
+	'Renerien',
+	'Renerien 2'
+),
+(
+	'hero',
+	'Tireless',
+    null,
+    null,
+    'At the end of your turn, you may discard this skill to perform an action that you have not performed this turn.',
+	'Renerien',
+	'Renerien 3'
+),
+(
+	'hero',
+	'Grey Haven Craft',
+    null,
+    null,
+    'When you prepare this skill, discard all banes and gain a boon of your choice. Sprint 1 (During your turn, discard to move 1 space).',
+	'Renerien',
+	'Renerien 4'
+),
+(
+	'hero',
+	'Grey Haven Craft',
+    null,
+    null,
+    'When you prepare this skill, discard all banes and gain a boon of your choice. Sprint 1 (During your turn, discard to move 1 space).',
+	'Renerien',
+	'Renerien 5'
+);
+-- end Renerien deck
+
+-- values for Took deck
+INSERT INTO hero (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'hero',
+	'Simple Desires',
+	'innate',
+    null,
+    'At the start of your turn, you may discard this skill to Scout 2; then gain 1 inspiration for each Aid, Food or Song card in your play area.',
+	'Calaminth Took',
+	'Calaminth Took 1'
+),
+(
+	'hero',
+	'The Tookish Part',
+	'innate',
+	'valour',
+	'Before you test, you may discard this skill to test Wit instead and gain 1 inspiration. Hide (After you test, discard to become hidden).',
+	'Calaminth Took',
+	'Calaminth Took 2'
+),
+(
+	'hero',
+	'Hobbit-Sense',
+	'innate',
+    null,
+    'At the end of your turn, if there are no nearby enemies, you may Scout 1. Hide (After you test, discard to become hidden).',
+	'Calaminth Took',
+	'Calaminth Took 3'
+),
+(
+	'hero',
+	'Drinking Ditty',
+	'food',
+	'song',
+	'During your turn, you may discard this skill for you and each nearby hero to discard 1 Damage or 1 Fear. Strike 1 (when you attack, discard to add 1 hit).',
+	'Calaminth Took',
+	'Calaminth Took 4'
+),
+(
+	'hero',
+	'Fierce Resolve',
+    'innate',
+    'valour',
+    'When you attack, if you convert 1 or more Fate to Success, add 1 Success to the test. Rest 2 (Discard at the end of turn to discard 2 facedown Damage or Fear).',	
+    'Calaminth Took',
+    'Calaminth Took 5'
+);
+-- end Took deck
+-- end table hero
+
+-- values table item
