@@ -1947,3 +1947,740 @@ VALUES
 	'plate',	
     4
 );
+-- end armor deck
+
+-- values for item deck, offhand
+INSERT INTO item (type, name_eng, description, deck_eng, tier)
+values
+(
+	'offhand',	
+    'Harp',
+    'At start of your turn, a hero in your space who has 0 inspiration gains 1 inspiration.',
+    'harp',
+    1
+),
+(
+	'offhand',
+    'Forlindon Harp',
+    'At start of your turn, a hero in your space who has 0 inspiration gains 1 inspiration. If a hero in your space would gain an inspiration, they may discard a facedown Fear instead.',	
+    'harp',	
+    2
+),
+(
+	'offhand',
+	'Heats-Rest',
+    'At start of your turn, a hero in your space who has 0 inspiration gains 1 inspiration. If a hero in your space would gain an inspiration, they may discard a facedown Damage or Fear instead.',	
+    'harp',	
+    3
+),
+(
+	'offhand',	
+    'River-Calling',
+    '1 Success: stun. 1 Success: gain 1 inspiration. At the start of your turn, up to 2 heroes in your space who have 0 inspiration gain 1 inspiration.',	
+    'harp',	
+    3
+),
+(
+	'offhand',
+	'Chorus of Light',
+    'Each hero increases their inspiration limit by 2. At the start of your turn, a hero in your space gains 1 inspiration. 1 Success: stun, smite.',	
+    'harp',	
+    4
+),
+(
+	'offhand',	
+    'Banner',	
+    'After you or a nearby hero Rests or Guards, that hero gains 1 inspiration.',	
+    'banner',	
+    1
+),
+(
+	'offhand',	
+    'Dunedain Banner',
+    'After you or a nearby hero Rests, Guards or Hides, that hero gains 1 inspiration.',	
+    'banner',	
+    2
+),
+(
+	'offhand',	
+    'War-Haven',	
+    'After you or a nearby hero Rests, Guards or Hides, that hero gains 1 inspiration. After you discard a prepared Tactic card, you or a nearby hero may discard 1 facedown Damage or Fear.',	
+    'banner',	
+    3
+),
+(
+	'offhand',	
+    'War-Maker',
+    '1 Success: cleave. 1 Success: 2 hits. After you or a nearby hero Rests, Guards or Hides, that hero gains 1 inspiration.',	
+    'banner',	
+    3
+),
+(
+	'offhand',	
+    'Hopes Beacon',
+    'After you or a nearby hero Rests, Guards, Hides or discards a prepared Tactic or Valour skill, that hero may choose 1: gain 1 inspiration, Scout 1, discard a bane, or discard 1 facedown Damage or Fear.',	
+    'banner',	
+    4
+),
+(
+	'offhand',	
+    'Shield',
+    'Once per round, when you would suffer any amount of Damage, you may prevent 1 Damage.', 
+	'shield',	
+    1
+),
+(
+	'offhand',	
+    'Reinforced shield',
+    'Once per round, when you would suffer any amount of Damage, you may prevent 1 Damage and prepare 1 skill with Guard from your discard pile.', 
+	'shield',	
+    2
+),
+(
+	'offhand',	
+    'Bossed Shield',
+    'Once per round, when you would suffer any amount of Damage, you may prevent 1 Damage. Before you provoke an enemy, apply 2 hits and pierce to that enemy.',	
+    'shield',	
+    2
+),
+(
+	'offhand',	
+    'Ironhide',
+    'Once per round, when you would suffer any amount of Damage, you may prevent 2 Damage and prepare a skill with Guard from your discard pile. Increase your Damage limit by 1.', 
+	'shield',	
+    3
+),
+(
+	'offhand',	
+    'Flame-Guard',
+    '1 Success: 2 hits. Once per round, when you would suffer any amount of Damage, you may prevent 2 Damage and prepare a skill with guard from your discard pile.',	
+    'shield',	
+    3
+),
+(
+	'offhand',	
+    'Foe-Blind',
+    '1 Success: stun. Once per round, when you would suffer any amount of Damage, you may prevent 2 Damage and prepare a skill with Guard from your discard pile.',	
+    'shield',	
+    3
+),
+(
+	'offhand',	
+    'Hrinanbenn',
+    'Once per round, when you would suffer any amount of Damage, you may prevent 2 Damage and prepare a skill from your discard pile. Once per round, after an enemy moves into your space, you may apply stun to that enemy.',	
+    'shield',	
+    4
+);
+-- end offhand deck
+
+-- values for table item, weapon
+INSERT INTO item (type, name_eng, description, deck_eng, tier)
+values
+(
+	'weapon',	
+    'Rending Claws',
+    '1 Success: 3 hits. 1 Success: 2 hits, sunder. 2 Success: 5 hits. When you attack, you may discard a prepared skill to add 2 hits.',	
+    'beorn',
+	0
+),
+(
+	'weapon',	
+    'Mace',
+    '1 Success: 2 hits. 1 Success: 2 hits. 1 Success: stun.',	
+    'mace',	
+    1
+),
+(
+	'weapon',	
+    'Deft Mace',
+    'When used to attack an exhausted enemy, reveal 1 additional card. 1 Success: 3 hits. 1 Success: 2 hits, sunder. 1 Success: 1 hits, stun.',	
+    'mace',	
+    2
+),
+(
+	'weapon',	
+    'Bolgers Pride',
+    'Before you attack an exhausted enemy, gain 1 boon of your choice. 1 Success: 3 hits, smite. 1 Success: 3 hits. 1 Success: 2 hits, stun.',	
+    'mace',	
+    3
+),
+(
+	'weapon',	
+    'Bobbler',
+    'When used to attack an exhausted enemy, you may convert 1 Fate to 1 Success. 1 Success: 3 hits, sunder. 1 Success: 2 hits, cleave. 1 Success: 2 hits, stun.',	
+    'mace',	
+    3
+),
+(
+	'weapon',	
+    'World-Root',
+    'You cannot Sprint. Before you attack an exhausted enemy, you may Scout 2. 1 Success: 4 hits. 1 Success: 3 hits, cleave. 1 Success: 3 hits, stun.',
+    'mace',	
+    4
+),
+(
+	'weapon',	
+    'Staff',
+    '1 Success: 2 hits. 1 Success: 2 hits. 2 Success: 3 hits, stun.',	
+    'staff',	
+    1
+),
+(
+	'weapon',	
+    'Lone-Land Staff',
+    '1 Success: 3 hits. 1 Success: 2 hits. 2 Success: 4 hits, stun.',	
+    'staff',	
+    2
+),
+(
+	'weapon',	
+    'Staff of the Flame',
+    '1 Success: 2 hits. 1 Success: 2 hits, smite. 2 Success: 3 hits, stun. Before attacking with this item, you may discard a prepared skill to Scout 2.',	
+    'staff',	
+    2
+),
+(
+	'weapon',	
+    'Ent-Crook',
+    '1 Success: 4 hits. 1 Success: 3 hits, cleave. 2 Success: 5 hits, stun. You cannot Sprint.',	
+    'staff',	
+    3
+),
+(
+	'weapon',	
+    'Maiden-Wrath',
+    'When used to attack an exhausted enemy, add 1 Success. 1 Success: 4 hits. 1 Success: 2 hits, sunder. 2 Success: 3 hits, stun.',	
+    'staff',	
+    3
+),
+(
+	'weapon',	
+    'Maranwe',
+    '1 Success: 3 hits, stun. 1 Success: 2 hits. 2 Success: 4 hits, smite. Before attacking with this item, you may discard a prepared skill to Scout 2.',	
+    'staff',	
+    3
+),
+(
+	'weapon',	
+    'Worlds Burden',
+    '1 Success: Scout 2. 1 Success: 4 hits. 1 Success: 3 hits, stun. 2 Success: 3 hits, cleave, smite.',	
+    'staff',	
+    4
+),
+(
+	'weapon',	
+    'Short bow',
+    '1 Success: 3 hits. 2 Success: 3 hits, pierce.',	
+    'shortbow',	
+    1
+),
+(
+	'weapon',	
+    'Cavalry bow',
+    'When used to attack, if you have a Mount equipped, you may convert 1 Fate to 1 Success. 1 Success: 3 hits. 2 Success: 4 hits, pierce.',	
+    'shortbow',	
+    2
+),
+(
+	'weapon',	
+    'Rain-of-Stars',
+    'When used to attack, if you have a Mount equipped, you may reveal 1 additional card. 1 Success: 3 hits, cleave. 1 Success: 3 hits, smite. 2 Success: 3 hits, pierce.',	
+    'shortbow',	
+    3
+),
+(
+	'weapon', 
+    'Foe-Blood',
+    '1 Success: 3 hits, lethal. 2 Success: 5 hits, pierce. When used to attack, you may add 2 hits. If you do, suffer 1 facedown Damage. (This Damage cannot be prevented).',	
+    'shortbow',	
+    3
+),
+(
+	'weapon',	
+    'Needle-Threader',
+    '1 Success: 3 hits, pierce. 2 Success: 7 hits, smite. 3 Success: 12 hits, lethal. After you attack with this item, discard 1 prepared skill.',	
+    'shortbow',	
+    4
+),
+(
+	'weapon',	
+    'Sword',
+    '1 Success: 2 hits. 2 Success: 5 hits.',	
+    'sword',	
+    1
+),
+(
+	'weapon',	
+    'Dueling sword',
+    '1 Success: 3 hits, pierce. 2 Success: 3 hits, lethal. When you attack an elite enemy, convert 1 Fate to 1 Success.',	
+    'sword',	
+    2
+),
+(
+	'weapon',	
+    'Elven Sword',
+    '1 Success: 2 hits, pierce. 1 Success: 2 hits. 2 Success: 4 hits.',	
+    'sword',	
+    2
+),
+(
+	'weapon',	
+    'Numenor Sword',
+    '1 Success: 3 hits. 2 Success: 5 hits. After you defeat an enemy group, you may discard 1 facedown Damage or Fear.',	
+    'sword',	
+    2
+),
+(
+	'weapon',	
+    'Northen Blade',
+    'Before you attack an enemy that has sorcery, gain 1 inspiration. 1 Success: 3 hits. 2 Success: 3 hits, cleave.',	
+    'sword',	
+    2
+),
+(
+	'weapon',	
+    'Iron-Render',
+    '1 Success: 3 hits, pierce. 1 Success: 3 hits, sunder. 2 Success: 3 hits, lethal.',	
+    'sword',	
+    3
+),
+(
+	'weapon',	
+    'Sun-Silver',
+    'When used to attack, reveal 1 additional card. 1 Success: 3 hits. 1 Success: pierce. 1 Success: 6 hits.',	
+    'sword',	
+    3
+),
+(
+	'weapon',	
+	'Moon-Caller',	
+    '1 Success: 3 hits. 1 Success: 2 hits, cleave. 2 Success: 5 hits, smite. After you attack, if you are in darkness, you may discard 1 Damage or Fear.',	
+    'sword',	
+    3
+),
+(
+	'weapon',	
+    'Fate-Bender',
+    'When used to attack while you have 3 or more Damage, add stun. 1 Success: 2 hits, smite. 1 Success: 2 hits. 2 Success: 5 hits.',	
+    'sword',	
+    3
+),
+(
+	'weapon',	
+    'Will-Carver',
+    'When used to attack add 1 hit for each of your faceup Damage and Fear. 1 Success: 2 hits, sunder. 1 Success: 3 hits, smite. 2 Success: 6 hits.',	
+    'sword',	
+    4
+),
+(
+	'weapon',	
+    'Hammer',
+    '1 Success: 4 hits. 1 Success: 3 hits.',	
+    'hammer',	
+    1
+),
+(
+	'weapon',	
+    'Hollowbold Hammer',
+    '1 Success: 4 hits. 1 Success: 3 hits, sunder. 2 Success: 3 hits, cleave.',	
+    'hammer',	
+    2
+),
+(
+	'weapon',	
+    'Sleeping Bell',
+    '1 Success: 3 hits, sunder. 2 Success: 7 hits, cleave. After you defeat an enemy group, gain 1 additional inspiration.',	
+    'hammer',	
+    3
+),
+(
+	'weapon',	
+    'Mountain-Fall',
+    '1 Success: 4 hits, sunder. 1 Success: 3 hits, cleave. 2 Success: 4 hits, stun.',	
+    'hammer',	
+    3
+),
+(
+	'weapon',	
+    'Bone-Grinder',
+    'You can have 1 fewer prepared skill. 1 Success: 4 hits, sunder. 1 Success: 4 hits, cleave. 2 Success: 8 hits, stun.',	
+    'hammer',	
+    4
+),
+(
+	'weapon',	
+    'Knife',
+    '1 Success: 2 hits, pierce. 2 Success: 2 hits, lethal.',	
+    'knife',
+	1
+),
+(
+	'weapon',	
+    'Hunting knife',
+    '1 Success: 3 hits, pierce. 2 Success: 2 hits, lethal. After you defeat an enemy group, gain 1 additional inspiration.',	
+    'knife',	
+    2
+),
+(
+	'weapon',	
+    'Skinner',
+    '1 Success: 2 hits. 1 Success: 3 hits, pierce. 2 Success: 2 hits, lethal. After you defeat an enemy group, gain 1 additional inspiration.',	
+    'knife',	
+    3
+),
+(
+	'weapon',	
+    'Star-Swift',
+    '1 Success: 3 hits, pierce. 2 Success: 3 hits, lethal. After you attack with this item, you may move 1 space without provoking attacks.',	
+    'knife',	
+    3
+),
+(
+	'weapon',	
+    'Wicked Smile',
+    '1 Success: 3 hits, pierce. 1 Success: 3 hits. 2 Success: 3 hits, lethal. After you attack with this item, gain 1 inspiration and flip 1 Damage faceup.',	
+    'knife',	
+    4
+),
+(
+	'weapon',	
+    'Dagger',
+    '1 Success: 2 hits. 2 Success: 3 hits, pierce.',	
+    'dagger',	
+    1
+),
+(
+	'weapon',	
+    'Ered Luin dagger',
+    'Before you attack, you may spend 1 inspiration to give this weapon Range for that attack. 1 Success: 2 hits. 2 Success: 4 hits, pierce.',	
+    'dagger',	
+    2
+),
+(
+	'weapon',	
+    'Gondolin dagger',
+    'When used to attack, if there is a nearby Orc or Goblin, reveal 1 additinal card. 1 Success: 2 hits. 2 Success: 4 hits, pierce.',	
+    'dagger',	
+    2
+),
+(
+	'weapon',	
+    'Shade-Breaker',
+    '1 Success: 2 hits, smite. 1 Success: 2 hits. 2 Success: 4 hits, pierce. After you defeat an enemy group, a hero in your space may discard 1 Fear.',	
+    'dagger',	
+    3
+),
+(
+	'weapon',	
+    'Widows Warning',
+    '1 Success: 3 hits. 1 Success: 2 hits. 2 Success: 4 hits, pierce. When you test, if there is a nearby Orc or Goblin reveal 1 additional card.',	
+    'dagger',	
+    3
+),
+(
+	'weapon',	
+    'Blood-Wright',
+    '2 Success: 3 hits. 1 Success: 2 hits. 2 Success: 4 hits, pierce. Decrease your Damage and Fear limits by 1.',	
+    'dagger',	
+    3
+),
+(
+	'weapon',	
+    'Worms Tooth',
+    'After setup, become despondent. When you test, if there is a nearby Orc or Goblin, add 1 Success. 2 Success: 5 hits, pierce. 2 Success: 5 hits, smite.',	
+    'dagger',	
+    4
+),
+(
+	'weapon',	
+    'Hatchet',
+    '1 Success: 2 hits. 2 Success: 3 hits, sunder.',	
+    'hatchet',	
+    1
+),
+(
+	'weapon',	
+    'Wanderers Hatchet',
+    'Before you attack, you may spend 1 inspiration to give this item Range for that attack. 1 Success: 2 hits. 2 Success: 4 hits, sunder.',	
+    'hatchet',	
+    2
+),
+(
+	'weapon',	
+    'Drake-Tooth',
+    '1 Success: 3 hits, sunder. 1 Success: 2 hits. 2 Success: 4 hits, stun. Decrease your inspiration limit by 1.',	
+    'hatchet',	
+    3
+),
+(
+	'weapon',	
+    'Throat-Seeker',
+    '1 Success: 2 hits, sunder. 1 Success: 3 hits. 2 Success: 2 hits, lethal.',	
+    'hatchet',	
+    3
+),
+(
+	'weapon',	
+    'Hunger',
+    '1 Success: 4 hits. 1 Success: 3 hits, sunder. 2 Success: 3 hits, lethal. After you flip 1 or more Damage facedown, flip 1 Fear faceup.',
+    'hatchet',	
+    4
+),
+(
+	'weapon',	
+    'Battle Axe',	
+    '1 Success: 2 hits, sunder. 2 Success: 6 hits.',	
+    'axe',	
+    1
+),
+(
+	'weapon',	
+    'Iron Hills Battle Axe',
+    '1 Success: 3 hits. 1 Success: 2 hits, sunder. 2 Success: 6 hits.',	
+    'axe',	
+    2
+),
+(
+	'weapon',	
+    'Ered Luin Battle Axe',	
+    '1 Success: 2 hits, sunder. 2 Success: 6 hits, cleave. Increase your inspiration limit by 1.',	
+    'axe',	
+    2
+),
+(
+	'weapon',	
+    'Grief-Bearer',
+    '1 Success: 2 hits, lethal. 1 Success: 2 hits, sunder. 3 Success: 9 hits.',	
+    'axe',	
+    3
+),
+(
+	'weapon',	
+    'Honor-Knell',	
+    '1 Success: 2 hits, cleave. 1 Success: 2 hits, sunder. 3 Success: 8 hits. Increase your inspiration limit by 2.',	
+    'axe',	
+    3
+),
+(
+	'weapon',	
+    'Sorrow-Sworn',
+    'After you Strike, add 2 hits and suffer 1 facedown Damage. 1 Success: 4 hits, lethal. 1 Success: 4 hits, sunder. 2 Success: 8 hits.',	
+    'axe',	
+    4
+),
+(
+	'weapon',	
+	'Great Bow',
+    '1 Success: 2 hits. 2 Success: 5 hits.',	
+    'longbow',	
+    1
+),
+(
+	'weapon',	
+    'Hunting Great Bow',
+    '1 Success: 3 hits. 1 Success: 3 hits, pierce. After you defeat an enemy group, Scout 1.',	
+    'longbow',	
+    2
+),
+(
+	'weapon',	
+    'Mirkwood Great Bow',
+    '1 Success: 2 hits. 2 Success: 5 hits, cleave.',	
+    'longbow',	
+    2
+),
+(
+	'weapon',	
+    'Silver-fall',	
+    'When used to attack, you may discard a prepared card to convert all Fate to Success. 1 Success: 3 hits. 1 Success: 2 hits, pierce. 2 Success: 5 hits, cleave.',	
+    'longbow',	
+    3
+),
+(
+	'weapon',	
+    'Mourning',
+    'When used to attack, if you have a Song card prepared, add 1 Success. 1 Success: 2 hits. 1 Success: lethal. 2 Success: 5 hits, cleave.',	
+    'longbow',	
+    3
+),
+(
+	'weapon',	
+    'Bolt-Thrower',
+    '1 Success: 3 hits, pierce. 1 Success: 3 hits. 2 Success: 5 hits, cleave. Before you attack, you may spend 1 inspiration to target an enemy 1 additional space away.',	
+    'longbow',	
+    4
+),
+(
+	'weapon',	
+    'Spear',
+    '1 Success: 3 hits. 2 Success: 4 hits, pierce.',	
+    'spear',	
+    1
+),
+(
+	'weapon',	
+    'Rohirric spear',
+    'Before you attack, you may spend 1 inspiration to give this item Range for that attack. 1 Success: 3 hits. 2 Success: 4 hits, pierce.',	
+    'spear',	
+    2
+),
+(
+	'weapon',	
+    'Long Spear',
+    '1 Success: 4 hits. 2 Success: 5 hits, pierce. When you test to negate Damage or Fear from a counterattack, you may covert 1 Fate to 1 Success.',	
+    'spear',	
+    2
+),
+(
+	'weapon',	
+    'Bough of the White Tree',
+    '1 Success: 4 hits. 1 Success: 3 hits, pierce. 2 Success: 5 hits. When you test to negate Damage or Fear from a counterattack, you may convert all Fate to Success.',	
+    'spear',	
+    3
+),
+(
+	'weapon',	
+    'Faengwyr',
+    'When used to attack, if you moved this turn, add 2 hits. 1 Success: 4 hits, pierce. 2 Success: 6 hits.',	
+    'spear',	
+    3
+),
+(
+	'weapon',	
+    'Dancing Steel',
+    '1 Success: 3 hits, pierce. 1 Success: 3 hits, smite. 1 Success: 5 hits. After you attack with this item, you may move 1 space for each song you have prepared.',	
+    'spear',	
+    3
+),
+(
+	'weapon',	
+    'Isenhild',
+    '1 Success: 4 hits, pierce. 1 Success: 4 hits, smite. 2 Success: 6 hits. After a nearby enemy is defeared, you may discard a prepared song skill to move 2 spaces.',	
+    'spear',	
+    4
+),
+(
+	'weapon',	
+    'Sling',
+    '1 Success: 2 hits. 2 Success: 3 hits.',	
+    'sling',	
+    1
+),
+(
+	'weapon',	
+    'Leather slingshit',
+    '2 Success: 2 hits. 2 Success: 3 hits, stun.',	
+    'sling',	
+    2
+),
+(
+	'weapon',	
+    'GiantsBane',
+    '1 Success: 2 hits, stun. 2 Success: 3 hits, sunder. 2 Success: 4 hits. When you attack an elite enemy with this item, add 1 Success.',	
+    'sling',	
+    3
+),
+(
+	'weapon',	
+    'Whistler',
+    '1 Success: 2 hits, stun. 1 Success: 3 hits. 2 Success: 4 hits, smite. After you attack with this item, gain 1 inspiration for each Song skill you have prepared.',	
+    'sling',	
+    3
+),
+(
+	'weapon',	
+	'Shooting Star',
+	'1 Success: 4 hits. 1 Success: 2 hits, stun. 2 Success: 3 hits, sunder. When you attack, you may add 1 Success. If you do, suffer 1 Fear. (This Fear cannot be prevented.)',	
+    'sling',	
+    4
+);
+-- end weapon deck
+
+-- values for table item, item cd
+INSERT INTO item (type, name_eng, description, deck_eng, tier)
+values
+(
+	'item',
+    'Walking Stick',	
+    '1 Success: 2 hits. 2 Success: 2 hits, stun. After you move into a space with a difficult ground, gain 1 inspiration.',	
+    'stick',
+    1
+),
+(
+	'item',
+    'Trusted Walking Stick',
+    '1 Success: 2 hits, cleave. 2 Success: 3 hits, stun. You may ignore difficult ground.',
+    'stick',	
+    2
+),
+(
+	'item',	
+    'Quick-Nick',
+    '1 Success: 3 hits, cleave. 1 Success: 3 hits. 2 Success: stun, after the attack you may move 1 space. You may ignore difficult ground.',	
+    'stick',
+    3
+),
+(
+	'item',
+    'Constant Companion',
+    '1 Success: 3 hits. 1 Success: 2 hits, cleave. 1 Success: 2 hits, stun. 1 Success: gain 1 inspiration. You may ignore difficult ground.',	
+    'stick',	
+    3
+),
+(
+	'item',
+    'Cloud-Chaser',
+    '1 Success: 4 hits, cleave. 2 Success: 3 hits, stun. After you attack with this item, gain 1 inspiration. You may ignore darkness, difficult ground and fortified.',	
+    'stick',	
+    4
+),
+(
+	'item',
+    'Horn',
+    'At the start of your turn, if you are in a space with an enemy, you or a nearby hero gains 1 inspiration.',	
+    'horn',	
+    1
+),
+(
+	'item',
+    'Gondorian Horn',
+    'At the start of your turn, if you are in a space with an enemy, you or a nearby hero gains 1 inspiration. If a nearby hero would gain an inspiration, they may become emboldened instead.',	
+    'horn',	
+    2
+),
+(
+	'item',	
+    'Sentinels Horn',
+    'At the start of your turn, if you are in a space with an enemy, you or a nearby hero gains 1 inspiration. Once per round, when you or a nearby hero Scouts, that hero may reveal 1 additional card.',	
+    'horn',	
+    2
+),
+(
+	'item',	
+    'Ringing Glory',
+    '1 Success: lethal. At the start of your turn, if you are in a space with an enemy, you and a nearby hero gains 1 inspiration.',	
+    'horn',	
+    3
+),
+(
+	'item',
+    'Clarion Call',
+    'At the start of your turn, if you are in a space with an enemy, you or a nearby hero gains 1 inspiration. After you attack, you may spend 2 inspiration for a nearby hero to also attack.',	
+    'horn',	
+    3
+),
+(
+	'item',
+    'Starsong',
+    'At the start of your turn, if you are in space with an enemy, you and a nearby hero gain 1 inspiration. Once per round, you may discard a song card for a nearby hero to discard 1 Fear or Damage.',	
+    'horn',	
+    3
+),
+(
+	'item',
+    'Thunderclap',
+    '1 Success: lethal. 1 Success: a nearby hero may move 1 space without provoking attacks. At the start of your turn, you or nearby hero gains 1 inspiration.',	
+    'horn',	
+    4
+);
+-- end item deck and item table
