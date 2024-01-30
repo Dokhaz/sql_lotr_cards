@@ -2761,3 +2761,376 @@ VALUES
 -- end mount deck
 
 -- values for terrain
+INSERT INTO terrain (type, name_eng, description, deck_eng)
+values
+(
+	'terrain',	
+    'Stream',	
+    'After a hero moves through a stream, their turn ends. After an enemy moves through a stream, their activation ends.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Boulder',	
+    'If you test to negete Damage and Fear while in a space with a boulder, you may convert 1 Fate to 1 Success.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Barrels',	
+    'You may interact with barrels to test: Wisdom; 2. If you pass, apply 4 hits and stun to a nearby enemy and discard the barrels. Interacting with barrels does not provoke attacks.',	
+    'terrain'
+),
+(
+	'terrain',	
+	'Rubble',	
+	'While in a space with rubble, you may use the rubble as an equipped item. 1 Success: 2 hits. 2 Success: 1 hit, pierce.',	
+	'terrain'
+),
+(
+	'terrain',	
+	'Statue',	
+	'You may interact with a statue to test: Might; 2. If you pass, apply 4 hits and sunder to an enemy in your space and discard the statue. Interacting with a statue does not provoke attacks.',	
+	'terrain'
+),
+(
+	'terrain',	
+    'Pit',	
+    'After you move into a space with pit, test Agility; 2. If you fail, suffer 2 Damage.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Pond',	
+    'At the start of your turn, if you are in space with a pond, gain 1 inspiration. After you move into space with a pond, test Spirit; 2. If you fail, you cannot move out of that space this turn.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Trench',	
+    'After a hero moves through a trench, they suffer 2 facedown Damage. After an enemy moves through a trench, apply 2 hits to that enemy. (This may change the enemy attack.)',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Bush',	
+    'After you end your turn in a space with a bush, you may test Wit; 2. If you pass, become hidden.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Elevation',	
+    'While a figure is in a space with elevation, their Rage attacks can target a figure 1 additional space away. Figures in a space with elevation are in range only if the attacker is in a space with elevation.',	
+    'terrain'
+),
+(
+	'terrain',	
+	'Barricade',	
+	'Heroes and enemies cannot move into this space (unless they can ignore terrain).',	
+	'terrain'
+),
+(
+	'terrain',	
+    'Log',	
+    'You may interact with a log to test Agility; 1. If you pass, gain 1 inspiration and become determined. Interacting with a log does not provoke attacks.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Web',	
+    'When you would move out of a space with a web, test Might; 1. If you fail, forfeit that movement instead.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Fence',	
+    'When you would move out of a space with a web, test Agility; 1. If you fail, forfeit that movement instead. After an enemy moves through a fence, their movement immediately ends (even if this prevents reacing their target).',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Fire Pit',	
+    'If you attack while in a space with fire pit, you may discard a card with Fate from the test to add pierce or smite.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Wall',	
+    'Spaces separated by a wall are not adjacent to (or nearby) each other.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Fountain',	
+    'If you would suffer Fear while in a space with a fountain, that Fear is suffered facedown. If you test to negate Damage or Fear while in a space with a fountain, you may reveal 1 additional card.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Mist',	
+    'If you would suffer Damage while in a space with mist, that Damage is suffered facedown. When you attack an enemy that is in a space with mist, you cannot convert Fate to Success.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Table',	
+    'You may interact with a table to test Spirit; 1. If you pass, gain 1 inspiration and become emboldened. Interacting with a table does not provoke attacks.',	
+    'terrain'
+),
+(
+	'terrain',	
+    'Chest',	
+    'You may interact with a chest to test Wisdom; 2. If you pass discard the chest and lore increases by 4.',	
+    'terrain'
+);
+-- end table terrain
+
+-- values for table title
+insert into title (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'title',
+	'Mist-Walker',	
+    'shadow',	
+	NULL, 
+    'After a hero explores a tile, you may remove this skill from the adventure to place your hero on any space of that tile.',	
+    'title',	
+    'title 1'
+),
+(
+	'title',	
+    'Stone-Talker',
+    NULL,
+    NULL,
+    'During your turn, you may remove this skill from the adventure to choose a space and apply stun to each enemy group in that space.',
+	'title',	
+    'title 2'
+),
+(
+	'title',	
+    'Pack-Dweller',
+    NULL,
+    NULL,
+    'After you Strike with this skill, remove it from the adventure. Strike 3.',	
+    'title',	
+    'title 3'
+),
+(
+	'title',	
+    'Dwarf-Friend',
+    NULL,
+    NULL,
+    'You have the Dwarf trait. During your turn, you may remove this skill from the adventure for you and another Dwarf to become emboldened.',	
+    'title',	
+    'title 4'
+),
+(
+	'title',	
+    'Word-Wielder',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests, you may remove this skill from the advnture to add 1 Success and Scout 1.',	
+    'title',	
+    'title 5'
+),
+(
+	'title',	
+    'Clue-Fider',
+    NULL,
+    NULL,
+    'When you iteract and test, you may remove this skill from the advnture to convert all Fate to Success.',	
+    'title',	
+    'title 6'
+),
+(
+	'title',	
+    'Stinging Fly',	
+    'shadow',
+    NULL,
+    'At the start of your turn, you may remove this skill from the advernture to perform an attack and ignore all counter-attacks until the end of your turn.',	
+    'title',	
+    'title 7'
+),
+(
+	'title',	
+    'Wingfoot',
+    null,
+    null,
+    'After you Sprint with this skill, remove it from the advnture. Sprint 3.',	
+    'title',	
+    'title 8'
+),
+(
+	'title',	
+    'Friend of Bears',
+    NULL,
+    NULL,
+    'After you Guard with this skill, remove it from the advnture. Guard 4.',	
+    'title',	
+    'title 9'
+),
+(
+	'title',	
+    'Fire-Giver',	
+    'tactic',
+    NULL,
+    'When you attack, you may remove this skill from the advnture to add modifier of your choice.',	
+    'title',	
+    'title 10'
+),
+(
+	'title',	
+    'Gale-Rock',
+    NULL,
+    NULL,
+    'Before a hero in your space suffers any amount of Fear, you may remove this skill from the advnture for that hero to gain an equal amount of inspiration instead.',	
+    'title',	
+    'title 11'
+),
+(
+	'title',	
+    'Stormcrow',	
+    'shadow',
+    NULL,
+    'At the start of your turn, you may remove this skill from the advnture to place your hero in a space with a threat token and interact with it without provoking attacks.',	
+    'title',	
+    'title 12'
+),
+(
+	'title',	
+    'Unfallen',	
+    NULL,
+    NULL,
+    'After you rest with this skill, remove it from the adventure and become determined. Rest 3.',	
+    'title',	
+    'title 13'
+),
+(
+	'title',	
+    'Elf-Friend',	
+    NULL,
+    NULL,
+    'You have the Elf trait. During your turn, you may remove this skill from the advnture for you and another Elf to gain 2 inspiration.',	
+    'title',	
+    'title 14'
+),
+(
+	'title',	
+    'Coney-Foot',
+    NULL,
+    NULL,
+    'After an enemy moves into a nearby space, you may remove this skill from the advnture to place your hero in a space with another hero without provoking attacks.',	
+    'title',	
+    'title 15'
+),
+(
+	'title',	
+    'Skin-Changer',	
+    'shadow',
+    NULL,
+    'After you Hide with this skill,  remove it from the advnture and become emboldened. Hide.',	
+    'title',	
+    'title 16'
+),
+(
+	'title',	
+    'Barrel Rider',	
+    NULL,
+    NULL,
+    'After you interact with a token and discard it, you may remove this skill from the advnture to place your hero in any space of an explored tile without provoking attacks.',	
+    'title',	
+    'title 17'
+),
+(
+	'title',	
+    'Flame-Bearer',	
+    'knowledge',	
+    'aid',	
+    'When a nearby enemy is attacked by another hero, you may remove this skill from the advnture to add 2 modifiers of your choice to that attack.',	
+    'title',	
+    'title 18'
+),
+(
+	'title',	
+    'Guest of Eagles',	
+    NULL,
+    NULL,
+    'At the start of your turn, you may remove this skill from the advnture to, without provoking attacks, either place your hero in another heros space of place another hero in your space.',	
+    'title',	
+    'title 19'
+),
+(
+	'title',	
+    'Luckwearer',	
+    'shadow',	
+	null,
+    'After you deplete an Item, you may remove this skill from the advnture to gain a boon of your choice and place 1 depletion token on that Item.',	
+    'title',	
+    'title 20'
+),
+(
+	'title',	
+    'Lone-Survivor',	
+    'valour',
+    NULL,
+    'When you or a nearby hero performs a last stand, you may remove this skill from the adventure to add 2 Success to the test.',	
+    'title',	
+    'title 21'
+),
+(
+	'title',	
+    'Treasure Seeker',	
+    'shadow',
+    NULL,
+    'At the start of your turn, you may remove this skill from the adventure to place your hero in a space with a search token and interact with it without provoking attacks.',	
+    'title',	
+    'title 25'
+),
+(
+	'title',	
+    'Storyteller',
+    NULL,
+    NULL,
+    'During your turn, you may remove this skill from the adventure for 2 heroes to gain inspiration equal to their inspiration limits.',	
+    'title',	
+    'title 26'
+),
+(
+	'title',	
+    'Dawn-Bringer',
+    NULL,
+    NULL,
+    '(has Success)',	
+    'title',	
+    'title 27'
+),
+(
+	'title',	
+    'Friend of Gondor',	
+    NULL,
+    NULL,
+    'You have the Human trait. During your turn, you may remove this skill from the adventure for you and another Human to each discard 1 bane.',	
+    'title',	
+    'title 31'
+),
+(
+	'title',	
+    'Friend of Rohan',
+	NULL,
+    NULL,
+    'You have the Human trait. During your turn, you may remove this skill from the adventure for you and another Human to each move 1 space.',	
+    'title',	
+    'title 32'
+),
+(
+	'title',	
+    'Beast-Singer',	
+    'song',
+    NULL,
+    'At the end of your turn, you may remove this skill from the adventure for each hero to gain 1 inspiration for each creature in your play area.',	
+    'title',	
+    'title 33'
+);
+-- end table title
+
+-- values for 
