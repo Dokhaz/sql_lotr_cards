@@ -2684,3 +2684,80 @@ values
     4
 );
 -- end item deck and item table
+
+-- values for table mount
+INSERT INTO mount (type, name_eng, trait1, description, deck_eng)
+VALUES
+(
+	'mount',	
+    'Snowbright',	
+    'creature',	
+    'Once per round, after you or a nearby hero suffers Damage or Fear, that hero may gain 1 inspiration.',	
+    'mount'
+),
+(
+	'mount',	
+    'Swift Steed',	
+    'creature',	
+    'Once per round, when you move out of a space, you may ignore enemies in that space. At the end of your turn, if you moved 3 or more spaces this turn, gain 1 inspiration.',	
+    'mount'
+),
+(
+	'mount',	
+    'Pack Mule',	
+    'creature',	
+    'You can have up to 2 additional prepared skills. Once per round, when you would discard a prepared skill, you may place that skill on top of your deck instead.',	
+    'mount'
+),
+(
+	'mount',	
+    'Friendly Pony',	
+    'creature',	
+    'Once per round, after you perform a Spirit test, a hero in your space may gain 1 inspiration or flip 1 Fear facedown. If you are a Hobbit that hero may do both.',	
+    'mount'
+),
+(
+	'mount',	
+    'War Charger',	
+    'creature',
+	'1 Success: 2 hits. Once per round, when you attack, you may add sunder and stun to that attack.',	
+    'mount'
+),
+(
+	'mount',	
+    'Travellers Horse',	
+    'creature',	
+    'Heroes up to 2 spaces away are nerby you. You are nearby heroes up to 2 spaces away. ACTION: Interact with a token in adjecent space. You may only use this action once per round.',	
+    'mount'
+),
+(
+	'mount',	
+    'Meadow Heart',	
+    'creature',	
+    'Once per round, after you move during your turn, you may apply 2 hits to each enemy in your space. 1 Success: become determined.',	
+    'mount'
+),
+(
+	'mount',	
+    'Grumble Bum',	
+    'creature',	
+    '1 Success: 3 hits. 2 Success: 3 hits, cleave. Once per round, whern you are counterattacked, you may reduce that Damage and Fear by 1.',	
+    'mount'
+),
+(
+	'mount',	
+    'Witness of Maranwe',
+    null,
+	'Once per round, when you attack, you may target an enemy 1 additional space away. ACTION: Flip this card to place your figure in a space with another hero (this does not provoke attacks).',	
+    'mount'
+),
+(
+	'mount',	
+    'Quickbeam',
+    null,
+	'You cannot sprint. 1 Success: 2 hits. 2 Success: 3 hits, stun. Once per round, when you attack, you may add cleave to that attack.',
+	'mount'
+);
+-- end mount deck
+
+-- values for terrain
