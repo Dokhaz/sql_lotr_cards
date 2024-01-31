@@ -3133,4 +3133,806 @@ VALUES
 );
 -- end table title
 
--- values for 
+-- values for table weakness
+INSERT INTO weakness (type, name_eng, description, deck_eng)
+VALUES
+('weakness',	'Foolish',		'(none)',	'Weakness'),
+('weakness',	'Misfortune',	'(none)',	'Weakness'),
+('weakness',	'Deceived',		'(none)',	'Weakness'),
+('weakness',	'Harassed',		'(none)',	'Weakness'),
+('weakness',	'Watched',		'(none)',	'Weakness'),
+('weakness',	'Lost',			'(none)',	'Weakness'),
+('weakness',	'Distracted',	'(none)',	'Weakness'),
+('weakness',	'Bad omen',		'(none)',	'Weakness'),
+('weakness',	'Uncertain',	'(none)',	'Weakness'),
+('weakness',	'Lazy',			'(none)',	'Weakness'),
+('weakness',	'Stray',		'(none)',	'Weakness'),
+('weakness',	'Isolated',		'(none)',	'Weakness'),
+('weakness',	'Slowed',		'(none)',	'Weakness'),
+('weakness',	'Haunted',		'(none)',	'Weakness'),
+('weakness',	'Cut off',		'(none)',	'Weakness'),
+('weakness',	'Pursued',		'(none)',	'Weakness'),
+('weakness',	'Late',			'(none)',	'Weakness'),
+('weakness',	'Arrogant',		'(none)',	'Weakness'),
+('weakness',	'Burdened',		'(none)',	'Weakness'),
+('weakness',	'Followed',		'(none)',	'Weakness');
+-- end table weakness
+
+-- values for table role
+-- delver
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Intrepid',	
+    'valour',
+    NULL,
+    'After you gain inspiration, you may discard this skill to gain 1 additional inspiration and Scout 1.',	
+    'Delver',	
+    'Delver 1'
+),
+(
+	'role',	
+    'Shadow Sight',	
+    'shadow',	
+    NULL,	
+    'When you test, if you are in darkness, convert 1 Fate to 1 Success. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Delver',	
+    'Delver 2'
+),
+(
+	'role',	
+    'Shadow Sight',	
+    'shadow',
+    NULL,
+    'When you test, if you are in darkness, convert 1 Fate to 1 Success. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Delver',	
+    'Delver 3'
+),
+(
+	'role',	
+    'Wiles',	
+    'shadow',	
+    'tactic',	
+    'At the end of your turn, you may Scout X where X is the number of Shadow skills you have prepared. If you do, discard this skill. Hide.',	
+    'Delver',	
+    'Delver 4'
+),
+(
+	'role',	
+    'Crushing blow',	
+    'tactic',
+    NULL,
+    'Before you strike with this skill, add sunder to the attack. Strike 1.',	
+    'Delver',	
+    'Delver 5'
+),
+(
+	'role',	
+    'Boasting',
+    NULL,
+    NULL,
+    'When you test Wisdom or Might, you may suffer 1 facedown Fear to convert all Fate to Success.',	
+    'Delver',	
+    'Delver 6'
+),
+(
+	'role',	
+    'Forging Ahead',
+    NULL,
+    NULL,
+    'At the start of your turn, if there are no nearby heroes, gain 1 inspiration. Sprint 2.',	
+    'Delver',	
+    'Delver 7'
+),
+(
+	'role',	
+    'Spirit of Adventure',	
+    'valour',
+    NULL,
+    'After a tile is placed, you may discard this skill to either Scout 2 or prepare a skill from your discard pile.',	
+    'Delver',	
+    'Delver 8'
+),
+(
+	'role',	
+    'No Stone Unturned',	
+    'shadow',
+    NULL,
+    'At the end of your turn, if you are in darkness, you may discard this skill to interact witk a token in your space. Sprint 1.',	
+    'Delver',	
+    'Delver 9'
+),
+(
+	'role',	
+    'No Stone Unturned',	
+    'shadow',
+    NULL,
+    'At the end of your turn, if you are in darkness, you may discard this skill to interact witk a token in your space. Sprint 1.',	
+    'Delver',	
+    'Delver 10'
+),
+(
+	'role',	
+    'Glory',	
+    'valour',
+    NULL,
+    'After you suffer Damage or Fear, gain 1 inspiration and Scout 1. Strike 2. Guard 1.',	
+    'Delver',
+	'Delver 11'
+),
+(
+	'role',	
+    'Treasures Untold',	
+    'tactic',
+    NULL,
+    'When you attack, if there is a search or threat token in the enemys space, add 4 hits and pierce. Sprint 1.',	
+    'Delver',	
+    'Delver 12'
+);
+-- captain
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Well Provisioned',
+    NULL,
+    NULL,
+    'At start of your turn, you may discard this skill for you and a nearby hero to Scout 2.',
+	'Captain',
+	'Captain 1'
+),
+(
+	'role',	
+    'Lead the Charge',	
+    'tactic',
+    NULL,
+    'After you attack, you may discard this skill to gain 1 inspiration and for a nearby hero to also attack. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Captain',	
+    'Captain 2'
+),
+(
+	'role',	
+    'Lead the Charge',	
+    'tactic',
+    NULL,
+    'After you attack, you may discard this skill to gain 1 inspiration and for a nearby hero to also attack. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Captain',	
+    'Captain 3'
+),
+(
+	'role',	
+    'Word of Triumpf',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests Might, you may discard this sill to add 1 Success and Scout 1. Strike 2.',	
+    'Captain',	
+    'Captain 4'
+),
+(
+	'role',	
+    'Stand Together',	
+    'tactic',
+    NULL,
+    'At start of your turn, you may discard this skill for you and each hero in your space to Scout 1. Guard 1.',	
+    'Captain',	
+    'Captain 5'
+),
+(
+	'role',	
+    'A Fey Mood',	
+    'valour',
+    NULL,
+    'After a hero performs a last stand, each hero may prepare 1 skill with Strike, Guard or Sprint from their discard pile. Strike 2.',	
+    'Captain',	
+    'Captain 6'
+),
+(
+	'role',	
+    'Empowering Words',
+    NULL,
+    NULL,
+    'During your turn, you may discard this skill and any amount of inspiration. For each inspiration you discard, you or a nearby hero becomes emboldened. Guard 2.',	
+    'Captain',	
+    'Captain 7'
+),
+(
+	'role',	
+    'Inspiring Presence',	
+    'aid',
+    NULL,
+    'If a nearby hero would gain an inspiration, they may Scout 1 or discard 1 facedown Damage or Fear instead.',	
+    'Captain',	
+    'Captain 8'
+),
+(
+	'role',	
+    'To me!',	
+    'tactic',
+    NULL,
+    'At start of your turn, you may discard this skill for you and each nearby hero to scout 2. Strike 2.',	
+    'Captain',	
+    'Captain 9'
+),
+(
+	'role',	
+    'Battle Plan',
+    NULL,
+    NULL,
+    'When you move into a space with an enemy, you may discard this skill for you and each nearby hero to scout 3. Each hero who prepares a Tactic skill this way gains 1 inspiration. Guard 2.',	
+    'Captain',	
+    'Captain 10'
+),
+(
+	'role',	
+	'A Wind Among Grass',	
+    'tactic',
+    NULL,
+    'After you move into a space, you may discard this skill to attack. Then you and each nearby hero may move 1 space without provoking attacks. Sprint 2.',	
+    'Captain',	
+    'Captain 11'
+),
+(
+	'role',	
+    'Master Tactician',	
+    'tactic',
+    NULL,
+    'At start of your turn, each hero may discard 1 prepared skill. Each hero who does Scouts 3.',	
+    'Captain',	
+    'Captain 12'
+);
+-- smith
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Reforging',
+    NULL,
+    NULL,
+    'After setup, equip the Hammer and Tongs Item. During your turn, you may discard this skill to prepare a skill from your discard pile.',	
+    'Smith',
+	'Smith 1'
+),
+(
+	'role',	
+    'Thrice-Forged Steel',	
+    'aid',
+    NULL,
+    'You can Strike with this skill when another hero in your space attacks. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Smith',	
+    'Smith 2'
+),
+(
+	'role',	
+    'Thrice-Forged Steel',	
+    'aid',
+    NULL,
+    'You can Strike with this skill when another hero in your space attacks. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Smith',	
+    'Smith 3'
+),
+(
+	'role',	
+    'Unbowed',	
+    'valour',
+    NULL,
+    'Your inspiration limit is increased by 2. (If this skill is discarded, discard all inspiration in excess of your inspiration limit.) Rest 1.',	
+    'Smith',	
+    'Smith 4'
+),
+(
+	'role',	
+    'Industrious',
+    NULL,
+    NULL,
+    'After you prepare this skill, a hero in your space may place 1 depletion token on an equipped Item. Sprint 1. Strike 1.',	
+    'Smith',	
+    'Smith 5'
+),
+(
+	'role',	
+    'Industrious',
+    NULL,
+    NULL,
+    'After you prepare this skill, a hero in your space may place 1 depletion token on an equipped Item. Sprint 1. Strike 1.',	
+    'Smith',	
+    'Smith 6'
+),
+(
+	'role',	
+    'Strike the Anvil',	
+    'tactic',
+    NULL,
+    'After a hero attacks an enemy in your space, you may discard this skill to attack that enemy and add sunder.',	
+    'Smith',	
+    'Smith 7'
+),
+(
+	'role',	
+    'Dwarf-Linked Rings',	
+    'knowledge',
+    NULL,
+    'Before a hero tests to negate Damage, you may discard this skill for that hero to Scout 2. Guard 2.',	
+    'Smith',	
+    'Smith 8'
+),
+(
+	'role',	
+    'Elf-Wrights Grace',	
+    'knowledge',
+    NULL,
+    'When a hero attacks, you may discard this skill for one of thier items to gain: 1 Success: 4 hits, pierce.',
+	'Smith',	
+    'Smith 9'
+),
+(
+	'role',	
+    'Craft of Men',	
+    'knowledge',
+    null,
+    'Before a hero attacks or tests to negate Damage or Fear, you may discard this skill for that hero to reveal 2 additional cards. Strike 2.',
+	'Smith',	
+    'Smith 10'
+),
+(
+	'role',	
+    'Cirth Inscriptions',	
+    'knowledge',	
+    'valour',
+	'After you prepare this skill gain 1 inspiration. When a hero attacks, you may discard this skill for one of their items to gain: 1 Success: 4 hits, smite.',	
+    'Smith',	
+    'Smith 11'
+),
+(
+	'role',	
+    'Forges Fire',	
+    'valour',
+    NULL,
+    'When you attack, you may discard this skill to choose an equipped Item and add 1 Success for each depletion token on that Item. Guard 3.',
+	'Smith',	
+    'Smith 12'
+);
+-- hunter
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Resourcefull',
+    NULL,
+    NULL,
+    'After you prepare this skill, gain 1 inspiration. At the end of your turn, you may discard this skill to gain 1 inspiration or Scout 1.',
+	'Hunter',	
+    'Hunter 1'
+),
+(
+	'role',	
+    'Precise Strike',	
+    'tactic',
+    NULL,
+    'Strike 3 (When you attack, discard to add 3 hits).',	
+    'Hunter',	
+    'Hunter 2'
+),
+(
+	'role',	
+    'Precise Strike',	
+    'tactic',
+    NULL,
+    'Strike 3 (When you attack, discard to add 3 hits).',	
+    'Hunter',	
+    'Hunter 3'
+),
+(
+	'role',	
+    'Resourcefull',
+    NULL,
+    NULL,
+    'After you prepare this skill, gain 1 inspiration. At the end of your turn, you may discard this skill to gain 1 inspiration or Scout 1.',	
+    'Hunter',	
+    'Hunter 4'
+),
+(
+	'role',	
+    'Coordinated Strike',	
+    'aid',
+    NULL,
+    'Before you Strike with this skill, if there is another hero in your targets space, add a modifier of your choice to the attack. Strike 1.',	
+    'Hunter',	
+    'Hunter 5'
+),
+(
+	'role',	
+    'Quick Snare',	
+    'tactic',
+    NULL,
+    'Before you Strike with this skill, add stun to the attack. Strike 1.',	
+    'Hunter',	
+    'Hunter 6'
+),
+(
+	'role',	
+    'Death Stroke',	
+    'tactic',
+    NULL,
+    'Before you Strike with this skill, add lethal to the attack. Strike 2.',	
+    'Hunter',	
+    'Hunter 7'
+),
+(
+	'role',	
+    'Barrage',	
+    'tactic',
+    NULL,
+    'Before you Strike with this skill, add cleave to the attack. Strike 1.',	
+    'Hunter',	
+    'Hunter 8'
+),
+(
+	'role',	
+    'Falcon Companion',	
+    'creature',
+    NULL,
+    'During your turn, you may discard this skill to apply 3 hits and a pierce to a nearby enemy. Sprint 1.',	
+    'Hunter',	
+    'Hunter 9'
+),
+(
+	'role',	
+    'Gather Supplies',	
+    'food',
+    NULL,
+    'After you prepare this skill, gain 1 inspiration. When you Rest with this skill you may Scout 3. Rest 2.',	
+    'Hunter',	
+    'Hunter 10'
+),
+(
+	'role',	
+    'On the Hunt',	
+    'tactic',
+    NULL,
+    'Once per turn, before you or a nearby hero attacks, that hero gains 1 inspiration. Strike 2.',	
+    'Hunter',	
+    'Hunter 11'
+),
+(
+	'role',	
+    'Stalk Prey',	
+    'valour',
+    NULL,
+    'When you attack, if there are no nearby heroes, add 2 hits. Hide.',	
+    'Hunter',	
+    'Hunter 12'
+);
+-- meddler
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Nosy',	
+    'knowledge',
+    NULL,
+    'Once per round, you may look at the top card of any heros skill deck. If it is a card with Fate that hero gains 1 inspiration.',	
+    'Meddler',	
+    'Meddler 1'
+),
+(
+	'role',	
+    'Guidance',
+    NULL,
+    NULL,
+    'Before a hero in your space tests, you may discard this skill for that hero to Scour 2. Hide.',	
+    'Meddler',	
+    'Meddler 2'
+),
+(
+	'role',	
+    'Guidance',
+    NULL,
+    NULL,
+    'Before a hero in your space tests, you may discard this skill for that hero to Scour 2. Hide.',	
+    'Meddler',	
+    'Meddler 3'
+),
+(
+	'role',	
+    'Gossip',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests Wisdom, you may discard this skill for that hero to gain 1 boon. Rest 2.',	
+    'Meddler',	
+    'Meddler 4'
+),
+(
+	'role',	
+    'Fast Talking',
+    NULL,
+    NULL,
+    'When you interact with a person token and test, you may discard this skill to add 2 Success and Scout 1. Strike 2.',	
+    'Meddler',	
+    'Meddler 5'
+),
+(
+	'role',	
+    'Interfering',	
+    'aid',	
+    'shadow',	
+    'When a nearby hero interacts and would test, you may discard this skill to perform that test instead. (All effects still target the original hero.) Sprint 1.',	
+    'Meddler',	
+    'Meddler 6'
+),
+(
+	'role',	
+    'Ancient Legend',	
+    'knowledge',
+    NULL,
+    'During your turn, you may discard this skill to swap your deck and your discard pile, then shuffle your deck.',	
+    'Meddler',	
+    'Meddler 7'
+),
+(
+	'role',	
+    'Contemplation',	
+    'knowledge',
+    NULL,
+    'You may have up to 6 prepared skills at the same time. (If this skill is discarded, discard all but 4 prepared skills.) Rest 2.',	
+    'Meddler',	
+    'Meddler 8'
+),
+(
+	'role',	
+    'Flattery',	
+    'knowledge',
+    NULL,
+    'At the start of the rally phase, you may discard this skill for you and each nearby hero to prepare up to 1 skill witk Fate from their discard pile.',	
+    'Meddler',	
+    'Meddler 9'
+),
+(
+	'role',	
+    'Hidden Plans',	
+    'knowledge',	
+    'shadow',	
+    'During your turn, you may discard this skill to Scout 4 and prepare up to 3 additional cards.',	
+    'Meddler',	
+    'Meddler 10'
+),
+(
+	'role',	
+    'Quick Temper',
+    NULL,
+    NULL,
+    'Before you Strike with this skill, add 2 modifiers of your choice to the attack. Strike 3.',	
+    'Meddler',	
+    'Meddler 11'
+),
+(
+	'role',	
+    'Strong Opinion',	
+    'knowledge',
+    NULL,
+    'When you test, you may add 1 Success for each knowledge skill you have prepared. If you do, discard this skill. Guard 2.',	
+    'Meddler',	
+    'Meddler 12'
+);
+-- lorekeeper
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Preparation',
+    NULL,
+    NULL,
+    'Before a hero in your space tests, you may discard this skill for that hero to gain 1 inspiration. After a hero in your space test, you may discard this skill for that hero to Scout 2.',	
+    'Lorekeeper',	
+    'Lorekeeper 1'
+),
+(
+	'role',	
+    'Childhood Tales',	
+    'aid',
+    NULL,
+    'After you move into a space with another hero, you may discard this skill. If you do, each hero in your space chooses to either become determined or discard 1 Fear.',	
+    'Lorekeeper',	
+    'Lorekeeper 2'
+),
+(
+	'role',	
+    'Childhood Tales',	
+    'aid',
+    NULL,
+    'After you move into a space with another hero, you may discard this skill. If you do, each hero in your space chooses to either become determined or discard 1 Fear.',	
+    'Lorekeeper',	
+    'Lorekeeper 3'
+),
+(
+	'role',	
+    'Driven by Knowledge',
+    NULL,
+    NULL,
+    'After lore increases during the action phase, you may discard this skill to perform 1 additional action. Strike 2.',	
+    'Lorekeeper',	
+    'Lorekeeper 4'
+),
+(
+	'role',	
+    'Wisdom beyond Years',
+    NULL,
+    NULL,
+    'Increase your Wisdom by 1. Guard 2.',	
+    'Lorekeeper',	
+    'Lorekeeper 5'
+),
+(
+	'role',	
+	'Wit beyond Measure',
+	NULL,
+	NULL,
+	'Increase your Wit by 1. Guard 2.',	
+    'Lorekeeper',	
+    'Lorekeeper 6'
+),
+(
+	'role',	
+    'Ancestry',
+    NULL,
+    NULL,
+    'When you test Spirit, you may discard this skill to add 1 Success and become emboldened. Guard 2.',	
+    'Lorekeeper',	
+    'Lorekeeper 7'
+),
+(
+	'role',	
+    'Collector',
+    NULL,
+    NULL,
+    'When you purchase this skill do not add it to your deck. During setup, place this skill in your play area as a reference. After a hero gains an Item, lore increases by 2. (This resolves automatically.)',	
+    'Lorekeeper',	
+    'Lorekeeper 8'
+),
+(
+	'role',	
+    'Secrets of the Wide World',	
+    'shadow',	
+	NULL,
+    'You have the Elf, Dwarf, and Hobbit traits. After you suffer 1 or more Fear, you may discard this skill to gain 2 inspiration.',	
+    'Lorekeeper',	
+    'Lorekeeper 9'
+),
+(
+	'role',	
+    'Song of History',	
+    'song',
+    NULL,
+    'At the end of your turn, you may discard this skill for you and each nearby hero to discard 1 bane and gain 1 inspiration. Sprint 2.',	
+    'Lorekeeper',	
+    'Lorekeeper 10'
+),
+(
+	'role',	
+    'Keeper of the Chronicle',
+    NULL,
+    NULL,
+    'When you purchase this skill do not add it to your deck. During setup, place this skill in your play area as a reference. After an adventure ends, lore increases by 2. (This resolves automatically.)',	
+    'Lorekeeper',	
+    'Lorekeeper 11'
+),
+(
+	'role',	
+    'Exploit Weakness',	
+    'knowledge',	
+    'tactic',	
+    'When you attack, you may remove this skill from the adventure to double the number of hits applied. Hide.',	
+    'Lorekeeper',	
+    'Lorekeeper 12'
+);
+-- guide
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Great Hound',
+	'creature',
+    NULL,
+    'When you Scut, you may spend 1 inspiration to prepare 1 additional card. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Guide',	
+    'Guide 1'
+),
+(
+	'role',	
+    'The way Forward',
+    NULL,
+    NULL,
+    'When you Scout, reveal 1 additional card. After you Scout, you may discard this skill for a nearby hero to move 1 space.',	
+    'Guide',	
+    'Guide 2'
+),
+(
+	'role',	
+    'The way Forward',
+    NULL,
+    NULL,
+    'When you Scout, reveal 1 additional card. After you Scout, you may discard this skill for a nearby hero to move 1 space.',	
+    'Guide',	
+    'Guide 3'
+),
+(
+	'role',	
+    'Helping Hand',	
+    'aid',
+    NULL,
+    'Heroes in your space may use keywords on your prepared cards. (All rules for keywords apply as normal.) Strike 2.',	
+    'Guide',	
+    'Guide 4'
+),
+(
+	'role',	
+    'Point the Way',	
+    'aid',
+    NULL,
+    'When you test, you may discard this skill to and spend any amount of Fate for a nearby hero to gain an equal amount of inspiration.',	
+    'Guide',	
+    'Guide 5'
+),
+(
+	'role',	
+    'Lead by Example',	
+    'aid',
+    NULL,
+    'After you gain a boon, another hero may gain the same boon. Hide.',	
+    'Guide',	
+    'Guide 6'
+),
+(
+	'role',	
+    'Alert',
+    NULL,
+    NULL,
+    'After a threat token or enemy is placed, you may discard this skill to gain a boon of your choice or Scout 2.',	
+    'Guide',	
+    'Guide 7'
+),
+(
+	'role',	
+    'Ancient Traills',	
+    'aid',	
+    'knowledge',	
+    'Once per round, after you travel, another hero may move 1 space or flip 1 Damage or Fear facedown. Sprint 1.',	
+    'Guide',	
+    'Guide 8'
+),
+(
+	'role',	
+    'Teamwork',	
+    'tactic',
+    NULL,
+    'At the start of the rally phase, you may choose a trait. If you do, each hero may prepare 1 skill with that trait from their discard pile; then, discard this skill.',	
+    'Guide',	
+    'Guide 9'
+),
+(
+	'role',	
+    'Survival Training',
+    NULL,
+    NULL,
+    'Heroes in your space cannot be forced to discard inspiration, boons, or prepared cards (unless they choose to). Hide.',	
+    'Guide',	
+    'Guide 10'
+),
+(
+	'role',	
+    'All Together',	
+    'aid',
+    NULL,
+    'After you perform an action, you may discard this skill for another hero to perform the same action.',	
+    'Guide',	
+    'Guide 11'
+),
+(
+	'role',	
+    'Timely Assistance',	
+    'aid',
+    NULL,
+    'Before a hero in your space tests, you may discard this skill to test Wisdom and add your test result to that test.',	
+    'Guide',	
+    'Guide 12'
+);
