@@ -3936,3 +3936,1099 @@ VALUES
     'Guide',	
     'Guide 12'
 );
+-- provisioner and trickster
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Foraging',
+    NULL,
+    NULL,
+    'After you or a nearby hero explores a tile, you may discard this skill to Scout 1 or prepare a Food skill from your discard pile. Hide (After you test, discard to become hidden).',
+	'Provisioner',
+    'Provisioner 1'
+),
+(
+	'role',	
+    'Waybread',	
+    'food',
+    NULL,
+    'At the end of your turn, you may discard this skill to flip 2 Damage or Fear facedown and Scout 2. Rest 2 (Discard at the end of turn to discard 2 facedown Damage or Fear).',	
+    'Provisioner',	
+    'Provisioner 2'
+),
+(
+	'role',	
+    'Waybread',	
+    'food',
+    NULL,
+    'At the end of your turn, you may discard this skill to flip 2 Damage or Fear facedown and Scout 2. Rest 2 (Discard at the end of turn to discard 2 facedown Damage or Fear).',	
+    'Provisioner',	
+    'Provisioner 3'
+),
+(
+	'role',	
+    'Mending',
+    NULL,
+    NULL,
+    'During your turn, you may discard this skill to place a depletion token on each equipped Item. Rest 2.',	
+    'Provisioner',	
+    'Provisioner 4'
+),
+(
+	'role',	
+    'Gathering',	
+    'food',
+    NULL,
+    'After a nearby search token is discarded, you may discard this skill to Scout 1 or gain 1 inspiration. Sprint 1.',	
+    'Provisioner',	
+    'Provisioner 5'
+),
+(
+	'role',	
+    'Good Cheer',	
+    'song',	
+    'aid',	
+    'After another hero moves into your space, you may discard this skill for you and that hero to each gain 1 inspiration and discard 1 Fear.',	
+    'Provisioner',	
+    'Provisioner 6'
+),
+(
+	'role',	
+    'Herbs',
+    NULL,
+    NULL,
+    'When you would discard a food skill, you may gain 1 inspiration and discard this skill instead. Strike 1.',
+	'Provisioner',	
+    'Provisioner 7'
+),
+(
+	'role',	
+    'Respite',
+    NULL,
+    NULL,
+    'During your turn, you may discard this skill for each hero in your space to flip 1 Damage or Fear facedown. Each hero who does gains 1 inspiration. Hide.',	
+    'Provisioner',	
+    'Provisioner 8'
+),
+(
+	'role',	
+    'Pleasant Company',	
+    'aid',
+    NULL,
+    'At the end of your turn, you may choose any number of nearby heroes to each gain 1 inspiration for each Aid, Food or Song card in your play area. If you do, discard this skill.',	
+    'Provisioner',	
+    'Provisioner 9'
+),
+(
+	'role',
+    'Heavy Packs',
+    NULL,
+    NULL,
+    'When you attack, you may discard this skill and deplete an equipped Item to add 2 Success. Guard 2.',	
+    'Provisioner',	
+    'Provisioner 10'
+),
+(
+	'role',	
+    'Feasting',	
+    'food',
+    NULL,
+    'Each heros Damage and Fear limits are increased by 1. You can use Rest for any hero in your space. Rest 2.',	
+    'Provisioner',	
+    'Provisioner 11'
+),
+(
+	'role',	
+    'Hope Renewed',
+    NULL,
+    NULL,
+    'At the start of your turn, if the next threat event is 4 or less threat away, you may discard this kill to perform up to 2 additional actions. Guard 2. Rest 4.',	
+    'Provisioner',	
+    'Provisioner 12'
+),
+(
+	'role',	
+    'Merry Chase',	
+    'shadow',
+    NULL,
+    'Before you Sprint with this skill, you may move an enemy group 1 space. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Trickster',	
+    'Trickster 1'
+),
+(
+	'role',	
+    'Chicanery',	
+    'tactic',
+    NULL,
+    'When you interact and test, you may add 1 Success for each unique trait among your prepared skills and gain a boon of your choice. If you do, discard this skill.',	
+    'Trickster',	
+    'Trickster 2'
+),
+(
+	'role',	
+    'Chicanery',	
+    'tactic',
+    NULL, 
+    'When you interact and test, you may add 1 Success for each unique trait among your prepared skills and gain a boon of your choice. If you do, discard this skill.',	
+    'Trickster',	
+    'Trickster 3'
+),
+(
+	'role',	
+    'Clever Distraction',	
+    'shadow',
+    NULL,
+    'When an enemy moves into a nearby space, you may discard this skill for a hero to become hidden.',	
+    'Trickster',	
+    'Trickster 4'
+),
+(
+	'role',	
+    'Improvisation',	
+    'tactic',
+    NULL,
+    'Before you attack, you may discard this skill for your equipped items to gain Range for that attack. Strike 2. Hide.',	
+    'Trickster',	
+    'Trickster 5'
+),
+(
+	'role',	
+    'Trick up Your Sleeve',	
+    'aid',	
+    'tactic',	
+    'Before ouy or a nearby hero tests, you may discard this skill to look at the top card of your deck. Add 1 Success to that test for each Fate that card has. Hide.',	
+    'Trickster',	
+    'Trickster 6'
+),
+(
+	'role',	
+    'Cutting Remark',	
+    'aid',	
+    'tactic',	
+    'When a nearby hero attacks, you may discard this skill to add pierce or stun to that attack. Strike 2.',	
+    'Trickster',	
+    'Trickster 7'
+),
+(
+	'role',	
+    'Gallows Humor',	
+    'aid',
+    NULL,
+    'Before a nearby hero suffers Fear, you may discard this skill for each nearby hero to either discard up to 2 facedown Fear or flip 2 Fear facedown.',	
+    'Trickster',	
+    'Trickster 8'
+),
+(
+	'role',	
+    'Look over There!',	
+    'shadow',	
+    'tactic',	
+    'When you Sprint, you do not provoke attacks. Sprint 1.',	
+    'Trickster',	
+    'Trickster 9'
+),
+(
+	'role',	
+    'Confusticate',
+    NULL,
+    NULL,
+    'Before you perform a test, you may discard this skill to test Wit instead. If you spand inspiration during that test, a nearby hero gains 1 inspiration.',	
+    'Trickster',	
+    'Trickster 10'
+),
+(
+	'role',	
+    'Eye for Opportunity',	
+    'aid',	
+    'tactic',	
+    'After you prepare this skill each nearby hero Scouts 2. Strike 2. Rest 2.',	
+    'Trickster',	
+    'Trickster 11'
+),
+(
+	'role',	
+    'Quite a Spectacle',	
+    'aid',
+    NULL,
+    'ACTION: Discard this skill and spend any amount of inspiration. For each inspiration you spend this way, choose another hero to perform 1 action.',	
+    'Trickster',	
+    'Trickster 12'
+);
+-- musician and guardian
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Endless Melody',
+    NULL,
+    NULL,
+    'At the end of your turn, you may discard this skill to prepare a Song skill from your discard pile. If you do, gain 1 inspiration.',	
+    'Musician',	
+    'Musician 1'
+),
+(
+	'role',	
+    'Travelling Song',	
+    'song',
+    NULL,
+    'When you move into a space, you may discard this skill for you and up to 2 nearby heroes to each gain 1 inspiration.',	
+    'Musician',	
+    'Musician 2'
+),
+(
+	'role',	
+    'Travelling Song',	
+    'song',
+    NULL,
+    'When you move into a space, you may discard this skill for you and up to 2 nearby heroes to each gain 1 inspiration.',	
+    'Musician',	
+    'Musician 3'
+),
+(
+	'role',	
+    'Word of Peace',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests Wisdom, you may discard this skill to add 1 Success and Scout 1. Rest 2.',	
+    'Musician',	
+    'Musician 4'
+),
+(
+	'role',	
+    'Song of Mocking',	
+    'song',
+    NULL,
+	'During your turn, you may discard this skill to apply stun to 1 enemy in your space. If you do, 1 nearby hero gains 1 inspiration. Guard 1.',	
+    'Musician',	
+    'Musician 5'
+),
+(
+	'role',	
+    'A Bit of Nonsense',	
+    'song',
+    NULL,
+    'During your turn, you may discard this skill for you and nearby heroes to collectively discard up to 3 facedown Fear. Hide.',	
+    'Musician',	
+    'Musician 6'
+),
+(
+	'role',	
+    'Endless Wonder',
+    NULL,
+    NULL,
+    'When you prepare a Song skill, gain 1 inspiration. When you would gain inspiration, you may give it to nearby heroes instead. Rest 2.',	
+    'Musician',	
+    'Musician 7'
+),
+(
+	'role',	
+    'Durins Song',	
+    'song',
+    NULL,
+    'During your turn, you may discard this skill for you and nearby heroes to collectively flip up to 4 Fear facedown. Then you become determined Guard 2.',	
+    'Musician',	
+    'Musician 8'
+),
+(
+	'role',	
+    'Lay of Nimrodel',	
+    'song',
+    NULL,
+    'During your turn, you may discard this skill for you and nearby heroes to collectively discard up to 4 facedown Fear.',	
+    'Musician',	
+    'Musician 9'
+),
+(
+	'role',	
+    'Burst Into Song',	
+    'song',	
+    'aid',	
+    'After a nearby hero suffers Damage, you may discard this skill for you and that hero to each become emboldened or determined.',	
+    'Musician',	
+    'Musician 10'
+),
+(
+	'role',	
+    'Crescendo of Dawn',	
+    'song',
+    NULL,
+	'You and nearby heroes ignore darkness and add smite to each of your attacks. At the end of the shadow phase, discard this skill and gain 1 inspiration.',	
+    'Musician',	
+    'Musician 11'
+),
+(
+	'role',	
+    'Tale of Tinuviel',	
+    'song',
+    NULL,
+    'During your turn, you may discard this skill for you and up to 2 nearby heroes to each discard 1 Damage or 1 Fear. Then you Scout 3.',	
+    'Musician',	
+    'Musician 12'
+),
+(
+	'role',	
+    'You Cannot Pass',
+	'tactic',	
+    'valour',	
+    'You can use Guard for nearby heroes in addition to heroes in your space. Guard 3 (Discard to prevent 3 Damage or Fear for a hero in your space).',	
+    'Guardian',	
+    'Guardian 1'
+),
+(
+	'role',	
+    'Ready Defence',	
+    'tactic',	
+	NULL,
+    'When you test to negate Damage or Fear, add 1 Success. Guard 2 (Discard to prevent 2 Damage or Fear for a hero in your space).',	
+    'Guardian',	
+    'Guardian 2'
+),
+(
+	'role',	
+    'Ready Defence',	
+    'tactic',
+    NULL,
+    'When you test to negate Damage or Fear, add 1 Success. Guard 2 (Discard to prevent 2 Damage or Fear for a hero in your space).',	
+    'Guardian',	
+    'Guardian 3'
+),
+(
+	'role',	
+    'Word of Glory',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests Spirit, you may discard this skill to add 1 Success and Scout 1. Guard 1.',	
+    'Guardian',	
+    'Guardian 4'
+),
+(
+	'role',	
+    'Noble Sacrifice',	
+    'valour',
+    NULL,
+    'If a nearby hero would suffer Damage or Fear, you may discard this skill to suffer that Damage and Fear instead. If you do, that hero gains 1 inspiration and you may Scout 1.',	
+    'Guardian',	
+    'Guardian 5'
+),
+(
+	'role',	
+    'Desperate Defence',	
+    NULL,
+    NULL,
+    'Before you or another hero in your space perfoms a last stand, you may discard this skill to add 1 Success to the test. Guard 1. Rest 1.',	
+    'Guardian',	
+    'Guardian 6'
+),
+(
+	'role',	
+    'Voice Like Ringing Steel',	
+    'valour',
+    NULL,
+    'When a nearby enemy activates, you may discard this skill to be the target and Scout 1. You cannot suffer Fear during this activation.',	
+    'Guardian',	
+    'Guardian 7'
+),
+(
+	'role',	
+    'Ready Defence',	
+    'tactic',
+    NULL,
+    'When you test to negate Damage or Fear, add 1 Success. Guard 2.',	
+    'Guardian',	
+    'Guardian 8'
+),
+(
+	'role',	
+    'Guarded Strike',	
+    'tactic',	
+	NULL,
+    'Your other skills with Guard have Strike 1. Before you strike, gain 1 inspiration. Guard 2. Strike 1.',	
+    'Guardian',	
+    'Guardian 9'
+),
+(
+	'role',	
+    'Grim Resolve',
+    NULL,
+    NULL,
+    'When you or a hero in your space performs a last stand, you may discard this skill to add 1 Success to the test. Guard 2. Rest 2.',	
+    'Guardian',	
+    'Guardian 10'
+),
+(
+	'role',	
+    'Final Defence',
+    NULL,
+    NULL,
+    'When you or a hero in your space performs a last stand, you may discard this skill to add 1 Success to the test and Scout 2. Guard 3. Rest 2.',	
+    'Guardian',	
+    'Guardian 11'
+),
+(
+	'role',	
+    'Defence Instruction',	
+    'knowledge',
+    NULL,
+    'When a hero tests to negete Damage or Fear, they may spend 1 inspiration to convert 1 Fate to 2 Success. Guard 2.',	
+    'Guardian',	
+    'Guardian 12'
+);
+-- shieldmaiden and traveller
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'As One',	
+    'aid',
+    NULL,
+    'When a nearby hero tests, you may discard this skill to convert all Fate to Success. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Shieldmaiden',	
+    'Shieldmaiden 1'
+),
+(
+	'role',	
+    'Call to Glory',
+    NULL,
+    NULL,
+    'After you test, you may discard this skill to gain inspiration equal to your test result. Sprint 1 (During your turn, discard to move 1 space).',
+	'Shieldmaiden',	
+    'Shieldmaiden 2'
+),
+(
+	'role',	
+    'Call to Glory',
+    NULL,
+    NULL,
+    'After you test, you may discard this skill to gain inspiration equal to your test result. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Shieldmaiden',	
+    'Shieldmaiden 3'
+),
+(
+	'role',	
+    'Taunting Cry',	
+    'aid',	
+    'tactic',
+	'When a nearby hero would provoke an attack, you may discard this skill. If you do, that hero does not provoke attacks this turn. Guard 2.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 4'
+),
+(
+	'role',	
+    'As One',	
+    'aid',
+    NULL,
+    'When a nearby hero tests, you may discard this skill to convert all Fate to Success. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Shieldmaiden',	
+    'Shieldmaiden 5'
+),
+(
+	'role',	
+    'Press the Advantage',	
+    'valour',
+    NULL,
+    'After a hero in your space tests, you may discard this card to Scout X where X is equal to the test result.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 6'
+),
+(
+	'role',	
+    'Back to Back',	
+    'valour',
+    NULL,
+    'Your skills with Strike have Guard X and Rest X where X is equal to the number of heroes in your space. Strike 2.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 7'
+),
+(
+	'role',	
+	'Momentum',
+	NULL,
+	NULL,
+    'After a token in your space is discarded or an enemy group in your space is defeated, you may discard this skill to gain a boon of your choice.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 8'
+),
+(
+	'role',	
+    'Force Them Back',	
+    'valour',
+    NULL,
+    'Before a hero in your space peforms an action, you may discard this skill to apply stun to an eney in your space or move an enemy group 1 space. Sprint 1.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 9'
+),
+(
+	'role',	
+    'Flanking Strike',	
+    'tactic',
+    NULL,
+    'When you attack, if there is another hero in your space, add cleave to that attack. Strike 2.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 10'
+),
+(
+	'role',	
+    'Overrun',	
+    'tactic',
+    NULL,
+    'After an enemy group in your space is defeated,  you may discard this skill to move up to 1 space; then attack and add 1 Success to the test. Strike 2.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 11'
+),
+(
+	'role',	
+    'Carry the Day',	
+    'valour',
+    NULL,
+    'At the end of each heroźs turn, if they are nearby enemy, that hero Scouts 2. Otherwise, they gain 1 inspiration. At the end of the shadow phase, discard this skill.',	
+    'Shieldmaiden',	
+    'Shieldmaiden 12'
+),
+(
+	'role',	
+    'Over Ridge and Rill',	
+    'aid',
+    NULL,
+    'After you explore a tile, another hero gains 1 inspiration. Hide (After you test, discard to become hidden). Rest 1 (Discard at the end of turn to discard 1 facedown Damage or Fear).',	
+    'Traveller',	
+    'Traveller 1'
+),
+(
+	'role',	
+    'Many Paths to Tread',	
+    'song',	
+    'knowledge',	
+    'After you discard a token from your space, gain 1 inspiration or Scout 1. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Traveller',	
+    'Traveller 2'
+),
+(
+	'role',	
+    'Many Paths to Tread',	
+    'song',	
+    'knowledge',	
+    'After you discard a token from your space, gain 1 inspiration or Scout 1. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Traveller',	
+    'Traveller 3'
+),
+(
+	'role',	
+    'Camaraderie',	
+    'aid',	
+    'knowledge',	
+    'During your turn, you may discard this skill for a nearby hero to discard 1 Fear and Scout 1.',	
+    'Traveller',	
+    'Traveller 4'
+),
+(
+	'role',	
+    'Around Every Corner',	
+    'knowledge',
+    NULL,
+	'Once per round, after you move into a space with a person, search or terrain token, you may Scout 1. Sprint 1.',	
+    'Traveller',	
+    'Traveller 5'
+),
+(
+	'role',	
+    'Seasoned',	
+    'knowledge',
+    NULL,
+    'Before you interact, you may discard this skill to gain 1 inspiration or become determined.',	
+    'Traveller',	
+    'Traveller 6'
+),
+(
+	'role',	
+    'Fleet of Foot',	
+    NULL,
+    NULL,
+    'Once per round, before you travel, you may move 1 space. Sprint 1.',	
+    'Traveller',	
+    'Traveller 7'
+),
+(
+	'role',	
+    'Nothing to Fear',	
+    'valour',
+    NULL,
+    'You do not provoke attacks. Guard 2.',	
+    'Traveller',	
+    'Traveller 8'
+),
+(
+	'role',	
+    'Campfire Tales',	
+    'knowledge',
+    NULL,
+    'At the end of your turn, you may discard this skill for you and a nearby hero to Scout 2. Hide. Rest 2.',	
+    'Traveller',	
+    'Traveller 9'
+),
+(
+	'role',	
+    'Paths Less Travelled',	
+    'shadow',
+    NULL,
+    'Before you travel, you may discard this skill to become hidden. Sprint 2.',	
+    'Traveller',	
+    'Traveller 10'
+),
+(
+	'role',	
+    'Wanderlust',	
+    'valour',
+    NULL,
+    'After you interact, you may discard this skill to perform 1 additional action and gain 1 inspiration. Hide.',	
+    'Traveller',	
+    'Traveller 11'
+),
+(
+	'role',	
+    'Forgotten Roads',
+    NULL,
+    NULL,
+    'At the start of your turn, you may discard this skill for you and nearby hero to move up to 2 spaces without provoking attacks.',	
+    'Traveller',	
+    'Traveller 12'
+);
+-- pathfider and burglar
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Trailblazer',
+    NULL,
+    NULL,
+    'Before you Sprint, gain 1 inspiration. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Pathfider',	
+    'Pathfider 1'
+),
+(
+	'role',	
+    'Paths Unseen',
+    NULL,
+    NULL,
+    'After you Sprint with this skill, you may place another hero in your space without provoking attacks. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Pathfider',	
+    'Pathfider 2'
+),
+(
+	'role',	
+    'Paths Unseen',
+    NULL,
+    NULL,
+    'After you Sprint with this skill, you may place another hero in your space without provoking attacks. Sprint 1 (During your turn, discard to move 1 space).',	
+    'Pathfider',	
+    'Pathfider 3'
+),
+(
+	'role',	
+    'Word of Warning',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests Agility, you may discard this skill to add 1 Success and Scout 1. Sprint 1.',	
+    'Pathfider',	
+    'Pathfider 4'
+),
+(
+	'role',	
+    'Baited Trap',	
+    'aid',
+    NULL,
+    'When an enemy moves into a space with another hero, you may discard this skill to apply 3 hits and pierce to that enemy.',	
+    'Pathfider',	
+    'Pathfider 5'
+),
+(
+	'role',	
+    'Trail Sign',	
+    'aid',
+    NULL,
+    'After another hero moves into a space, you may discard this skill for that hero to choose to either move 1 additional space, become hidden, or interact with a search token.',	
+    'Pathfider',	
+    'Pathfider 6'
+),
+(
+	'role',	
+    'Ambush',	
+    'tactic',
+    NULL,
+    'When an enemy moves into a space, you may discard this skill to attack that enemy, if possible, and add 1 Success to the test. Strike 2.',	
+    'Pathfider',	
+    'Pathfider 7'
+),
+(
+	'role',	
+    'Ambush',	
+    'tactic',	
+	NULL,
+    'When an enemy moves into a space, you may discard this skill to attack that enemy, if possible, and add 1 Success to the test. Strike 2.',	
+    'Pathfider',	
+    'Pathfider 8'
+),
+(
+	'role',	
+    'A Shortcut',
+    NULL,
+    NULL,
+    'After a hero explores a tile, you may discard this skill to place your hero in their space without provoking attacks and Scout 1. Hide.',	
+    'Pathfider',	
+    'Pathfider 9'
+),
+(
+	'role',	
+    'Find a Way',
+    NULL,
+    NULL,
+    'Before you Sprint with this skill, choose to become determined, gain 1 inspiration, or Scout 1. Sprint 1.',	
+    'Pathfider',	
+    'Pathfider 10'
+),
+(
+	'role',	
+    'Unstoppable',
+    NULL,
+    NULL,
+    'When you test, you may add 1 Success for each skill with Sprint you have prepared and then discard this skill. Sprint 2.',	
+    'Pathfider',	
+    'Pathfider 11'
+),
+(
+	'role',	
+    'Honed Instinct',
+    NULL,
+    NULL,
+    'After you Sprint, you may move 1 additional space. Your skills with Sprint have Strike 2 and Hide. Strike 2. Hide.',	
+    'Pathfider',	
+    'Pathfider 12'
+),
+(
+	'role',	
+    'Self-Sufficient',
+    NULL,
+    NULL,
+    'When you test, if there are no nearby heroes, you may convert 2 Fate to 1 Success. Hide (After you test, discard to become hidden).',	
+    'Burglar',	
+    'Burglar 1'
+),
+(
+	'role',	
+    'Quiet',
+    NULL,
+    NULL,
+    'If you would discard hidden, you may gain 1 inspiration and discard this skill instead. Hide (After you test, discard to become hidden).',	
+    'Burglar',	
+    'Burglar 2'
+),
+(
+	'role',	
+    'Quiet',
+    NULL,
+    NULL,
+    'If you would discard hidden, you may gain 1 inspiration and discard this skill instead. Hide (After you test, discard to become hidden).',	
+    'Burglar',	
+    'Burglar 3'
+),
+(
+	'role',	
+    'Word of Fortune',	
+    'knowledge',
+    NULL,
+    'When you or a nearby hero tests Wit, you may discard this sill to add 1 Success and Scout 1. Hide.',	
+    'Burglar',	
+    'Burglar 4'
+),
+(
+	'role',	
+    'Sneaking',
+    NULL,
+    NULL,
+    'While hidden, you do not provoke attacks. Hide. Sprint 1.',	
+    'Burglar',	
+    'Burglar 5'
+),
+(
+	'role',	
+    'Pockets',
+    NULL,
+    NULL,
+    'At the end of your turn, you may discard this skill to equip an unequipped Item from the inventory. Rest 2.',	
+    'Burglar',	
+    'Burglar 6'
+),
+(
+	'role',	
+    'What Is in my Pocket?',
+    NULL,
+    NULL,
+    'If you are attacked and would discard hidden, discard this skill insted and gain 2 inspiration. Guard 2. Hide.',	
+    'Burglar',	
+    'Burglar 7'
+),
+(
+	'role',	
+    'Self-Sufficient',
+    NULL,
+    NULL,
+    'When you test, if there are no nearby heroes, you may convert 2 Fate to 1 Success. Hide (After you test, discard to become hidden).',	
+    'Burglar',	
+    'Burglar 8'
+),
+(
+	'role',	
+    'Hidden Blades',	
+    'shadow',
+    NULL,
+    'Your other skills with Hide have Strike 2. Hide. Strike 2.',	
+    'Burglar',	
+    'Burglar 9'
+),
+(
+	'role',	
+    'Unseen Strike',	
+    'tactic',	
+    'shadow',	
+    'When you attack, if you discard Hidden, add 1 hit and lethal. Strike 2.',	
+    'Burglar',	
+    'Burglar 10'
+),
+(
+	'role',	
+    'Quick Thinking',
+    NULL,
+    NULL,
+    'After you prepare this skill, Scout 2. After you discard a boon, you may discard this skill to gain a diffrent boon. Sprint 1.',	
+    'Burglar',	
+    'Burglar 11'
+),
+(
+	'role',	
+    'Embrace the Darkness',	
+    'shadow',	
+	NULL,
+    'When you test, if you are in darkness, convert 1 Fate to 1 Success. Before you Hide, you may suffer 1 Fear that cannot be prevented to not discard that skill. Hide.',	
+    'Burglar',	
+    'Burglar 12'
+);
+-- herbalist and soldier
+INSERT INTO role (type, name_eng, trait1, trait2, description, deck_eng, card)
+VALUES
+(
+	'role',	
+    'Curiosity',
+    NULL,
+    NULL,
+    'After you prepare a skill with Fate, you may discard this skill to gain 2 inspiration or become determined.',	
+    'Herbalist',	
+    'Herbalist 1'
+),
+(
+	'role',	
+    'Gathered Wisdom',	
+    'knowledge',
+    NULL,
+    'After lore increases, you or a nearby hero may Scout 1. Rest 2 (Discard at the end of your turn to discard 2 facedown Damage or Fear).',
+	'Herbalist',	
+    'Herbalist 2'
+),
+(
+	'role',	
+    'Gathered Wisdom',	
+    'knowledge',	
+	NULL,
+    'After lore increases, you or a nearby hero may Scout 1. Rest 2 (Discard at the end of your turn to discard 2 facedown Damage or Fear).',	
+    'Herbalist',	
+    'Herbalist 3'
+),
+(
+	'role',	
+    'Study of Nature',	
+    'aid',	
+    'knowledge',	
+    'During your turn, you may discard this skill to choose another hero to scout 1. If they prepare a card with Fate, you each gain 1 inspiration.',	
+    'Herbalist',	
+    'Herbalist 4'
+),
+(
+	'role',	
+    'Hands of a Healer',
+    NULL,
+    NULL,
+    'After a hero in your space discards Damage, you may discard this skill for a hero in your space to prepare a card with Fate from their discard pile. Rest 2.',	
+    'Herbalist',	
+    'Herbalist 5'
+),
+(
+	'role',	
+    'Insight',	
+    'knowledge',
+    NULL,
+    'Once per round, a hero in your space may discard a prepared skill to Scout 2. Hide.',	
+    'Herbalist',	
+    'Herbalist 6'
+),
+(
+	'role',	
+    'Calming Presence',
+    NULL,
+    NULL,
+    'Before you or a nearby hero suffers Fear, you may discard this skill to prevent all of that Fear. Then look at the top 3 Fear cards and place each of them on the top or bottom of that deck.',	
+    'Herbalist',	
+    'Herbalist 7'
+),
+(
+	'role',	
+    'Athelas',
+    NULL,
+    NULL,
+    'At the end of your turn, you may discard this skill for you or a nearby hero to discard up to 2 Damage. Sprint 1.',	
+    'Herbalist',	
+    'Herbalist 8'
+),
+(
+	'role',	
+    'Natural Remedy',
+    NULL,
+    NULL,
+    'Before you or a nearby hero suffers Damage, you may discard this skill to prevent all of that Damage. Then look at the top 3 Damage cards and place each of them on the top or bottom of that deck.',	
+    'Herbalist',	
+    'Herbalist 9'
+),
+(
+	'role',	
+    'Innovation',
+	'shadow',
+    NULL,
+    'When you interact and test, you may discard this skill to discard all cards from the test and reveal that many additional cards. Hide.',	
+    'Herbalist',	
+    'Herbalist 10'
+),
+(
+	'role',	
+    'Phosphorescence',
+    NULL,
+    NULL,
+    'Heroes in your space ignore darkness. When a hero in your space prepares a card with Fate, that hero gains 1 inspiration.',	
+    'Herbalist',	
+    'Herbalist 11'
+),
+(
+	'role',	
+    'Healing Poultice',
+    NULL,
+    NULL,
+    'At the end of your turn, you may discard this skill for you or a nearby hero to discard up to 2 Damage and 2 Fear. Sprint 2.',	
+    'Herbalist',	
+    'Herbalist 12'
+),
+(
+	'role',	
+    'Comrade in Arms',
+    NULL,
+    NULL,
+    'When you or a nearby hero would discard a prepared Tactic skill, you may discard this skill instead. Guard 2 (Discard to prevent 2 Damage or Fear for a hero in your space.',	
+    'Soldier',	
+    'Soldier 1'
+),
+(
+	'role',	
+    'Love of War and Valour',	
+    'valour',	
+    'tactic',	
+    'After you Strike with this skill, you and each hero with a prepared Tactic skill may Scout 2. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Soldier',	
+    'Soldier 2'
+),
+(
+	'role',	
+    'Love of War and Valour',	
+    'valour',	
+    'tactic',	
+    'After you Strike with this skill, you and each hero with a prepared Tactic skill may Scout 2. Strike 2 (When you attack, discard to add 2 hits).',	
+    'Soldier',	
+    'Soldier 3'
+),
+(
+	'role',	
+    'Fighting Advance',	
+    'tactic',
+    NULL,
+    'Before you travel, you must discard this skill and Scout 1. Before you attack, you may move 1 space.',	
+    'Soldier',	
+    'Soldier 4'
+),
+(
+	'role',	
+    'Fighting Advance',	
+    'tactic',
+    NULL,
+	'Before you travel, you must discard this skill and Scout 1. Before you attack, you may move 1 space.',	
+    'Soldier',	
+    'Soldier 5'
+),
+(
+	'role',	
+    'Fighting Advance',	
+    'tactic',
+    NULL,
+    'Before you travel, you must discard this skill and Scout 1. Before you attack, you may move 1 space.',	
+    'Soldier',	
+    'Soldier 6'
+),
+(
+	'role',	
+    'On Your Orders',	
+    'aid',	
+    'tactic',
+	'After a nearby hero performs an action, you may discard this skill to perform the same action.',	
+    'Soldier',	
+    'Soldier 7'
+),
+(
+	'role',	
+    'On Your Orders',	
+    'aid',	
+    'tactic',	
+    'After a nearby hero performs an action, you may discard this skill to perform the same action.',	
+    'Soldier',	
+    'Soldier 8'
+),
+(
+	'role',	
+    'Sleep Anywhere',	
+    NULL,
+    NULL,
+    'Before you Rest, each hero may flip 1 Damage or Fear facedown for each of their prepared skill with Success. Rest 3.',	
+    'Soldier',	
+    'Soldier 9'
+),
+(
+	'role',	
+    'Sleep Anywhere',
+    NULL,
+    NULL,
+    'Before you Rest, each hero may flip 1 Damage or Fear facedown for each of their prepared skill with Success. Rest 3.',	
+    'Soldier',	
+    'Soldier 10'
+),
+(
+	'role',	
+    'Break the Wave',	
+    'tactic',
+    NULL,
+    'At the end of your turn, you may discard this skill for you and each hero with prepared Tactic to become determined and attack, if possible. Sprint 1.',	
+    'Soldier',	
+    'Soldier 11'
+),
+(
+	'role',	
+    'Break the Wave',	
+    'tactic',
+    NULL,
+    'At the end of your turn, you may discard this skill for you and each hero with prepared Tactic to become determined and attack, if possible. Sprint 1.',	
+    'Soldier',	
+    'Soldier 12'
+);
+-- end table role
